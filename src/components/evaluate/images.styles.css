@@ -1,0 +1,79 @@
+section.evaluate .upper {
+  height: 150px;
+}
+@media screen and (min-width: 768px) {
+  section.evaluate .upper {
+    height: 200px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section.evaluate .upper {
+    height: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section.evaluate .upper {
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  section.evaluate .upper {
+    height: 50px;
+  }
+}
+
+section.evaluate .image-stack {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  position: relative;
+  margin-top: -150px;
+}
+
+@media screen and (min-width: 768px) {
+  section.evaluate .image-stack {
+    margin-top: -250px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section.evaluate .image-stack {
+    margin-top: -500px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section.evaluate .image-stack {
+    margin-top: -550px;
+  }
+}
+
+section.evaluate .image-stack__item--one {
+  grid-column: 1 / span 5;
+  grid-row: 1;
+  z-index: 1;
+}
+
+section.evaluate .image-stack__item--two {
+  grid-column: 5 / span 12;
+  grid-row: 1;
+  z-index: 2;
+  padding-top: 30%;
+}
+
+@media screen and (min-width: 1024px) {
+  section.evaluate .image-stack__item--two {
+    padding-top: 50%;
+  }
+}
+
+section.evaluate .image-stack__item--three {
+  grid-column: 2 / span 6;
+  grid-row: 1;
+  padding-top: 85%;
+  z-index: 5;
+}
+
+@media screen and (min-width: 1024px) {
+  section.evaluate .image-stack__item--three {
+    padding-top: 95%;
+  }
+}

@@ -1,0 +1,37 @@
+.upper {
+  height: 100px;
+}
+@media screen and (min-width: 768px) {
+  .upper {
+    height: 150px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .upper {
+    height: 200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .upper {
+    height: 250px;
+  }
+}
+
+.video {
+  margin-top: -100px;
+}
+@media screen and (min-width: 768px) {
+  .video {
+    margin-top: -150px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .video {
+    margin-top: -200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .video {
+    margin-top: -250px;
+  }
+}

@@ -1,9 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -40,39 +44,6 @@
   --card-border-rgb: 131, 134, 135;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
-  }
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -85,23 +56,118 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 a {
   color: inherit;
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+/* -------------------------------- */
+
+.bg-dark {
+  background-color: #1d1d1b;
+}
+.bg-white {
+  background-color: #ffffff;
+}
+.bg-blue {
+  background-color: #5A74B7;
+}
+
+section.pt {
+  padding-top: 50px;
+}
+section.pb {
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  section.pt {
+    padding-top: 80px;
   }
+  section.pb {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section.pt {
+    padding-top: 100px;
+  }
+  section.pb {
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section.pt {
+    padding-top: 140px;
+  }
+  section.pb {
+    padding-bottom: 140px;
+  }
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+.wrapper-xl {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+
+/* Animations */
+
+.transition-config {
+  transition-duration: 1s;
+}
+
+.grow:hover{
+  transform: scale(1.1);
+  transition-duration: 0.25s;
+}
+
+.slide {
+  margin-left: 100px;
+}
+
+.slide.inViewport {
+  margin-left: 0;
+}
+
+.fade {
+  opacity: 0;
+}
+.fade.inViewport {
+  opacity: 1;
+}
+
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+  }
+}
+
+.float {
+  overflow: hidden;
+  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
 }

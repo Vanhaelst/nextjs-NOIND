@@ -1,0 +1,25 @@
+import React from "react";
+
+export const Hero = (): JSX.Element => (
+  <div
+    style={{
+      backgroundImage: "url('/images/hero.png')",
+      height: "90vh",
+      backgroundAttachment: "fixed",
+    }}
+    className="flex justify-center bg-cover bg-center"
+  >
+    <div className="wrapper flex flex-col items-center justify-center lg:flex-row">
+      <img src="/images/logo_icon.png" alt="NOIND icon" className="logo" />
+      <div className="flex flex-col items-center lg:items-start ">
+        <h1 className="title mb-4 text-center font-sans text-white md:text-left">
+          A novel way to express what we never thought we were able to express.
+        </h1>
+        <div className="flex flex-row items-center">
+          <img src="/images/play.svg" alt="play" />
+          <p className="showcase pl-4 font-sans text-white">Video Showcase</p>
+        </div>
+      </div>
+    </div>
+  </div>
+);

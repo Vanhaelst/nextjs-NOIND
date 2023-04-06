@@ -1,0 +1,27 @@
+footer {
+  padding: 60px 0;
+}
+
+footer .wrapper {
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 1024px) {
+  footer .wrapper {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  margin-top: 24px;
+  border-radius: 6px;
+  background-color: #323232;
+  color: white;
+}
+
+input:active {
+  border: none;
+  outline: none;
+}

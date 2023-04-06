@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="61px" height="60px" viewBox="0 0 61 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Button---Video" transform="translate(-21.000000, -13.000000)">
+            <g id="Group" transform="translate(21.500000, 13.000000)">
+                <circle id="Oval" fill="#FFFFFF" cx="30" cy="30" r="30"></circle>
+                <path d="M22.7236354,23.1601167 C22.7236354,20.7197403 25.375335,19.2031085 27.4787849,20.4404302 L39.1065437,27.2803186 C41.180649,28.500349 41.180649,31.4997031 39.1065437,32.71966 L27.4787849,39.5595799 C25.375335,40.796891 22.7236354,39.2802278 22.7236354,36.8398934 L22.7236354,23.1601167 Z" id="Path" fill="#323232"></path>
+            </g>
+        </g>
+    </g>
+</svg>

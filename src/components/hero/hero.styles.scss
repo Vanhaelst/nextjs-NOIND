@@ -1,0 +1,50 @@
+.wrapper {
+  width: 1100px;
+  max-width: 80%;
+
+  @media screen and (min-width: 768px) {
+    max-width: 80%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 100%;
+  }
+}
+
+.title {
+  font-size: 40px;
+  text-align: center;
+  line-height: 101%;
+
+  @media screen and (min-width: 768px) {
+    font-size: 50px;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 60px;
+    text-align: left;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 70px;
+    text-align: left;
+  }
+}
+
+.logo {
+  max-width: 150px;
+  padding-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 200px;
+    padding-bottom: 50px;
+  }
+  @media screen and (min-width: 1024px) {
+    max-width: 300px;
+    padding-bottom: 0;
+    padding-right: 50px;
+  }
+}
+
+
+.showcase {
+  font-size: 24px;
+}
