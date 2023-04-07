@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from "next/head";
 import {
   WorkingWith,
   Hero,
@@ -7,8 +7,9 @@ import {
   Video,
   Evaluate,
   Demo,
+  Navigation,
 } from "@/components";
-import { Bebas_Neue, IBM_Plex_Mono } from 'next/font/google'
+import { Bebas_Neue, IBM_Plex_Mono } from "next/font/google";
 
 const bebasNeue = Bebas_Neue({
   weight: "400",
@@ -31,6 +32,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${bebasNeue.variable} ${ibmPlexMono.variable} `}>
+        <Navigation />
         <Hero />
         <Intro />
         <WorkingWith />
@@ -40,5 +42,5 @@ export default function Home() {
         <Footer />
       </main>
     </>
-  )
+  );
 }

@@ -1,3 +1,4 @@
+export { Navigation } from "./navigation/navigation.component";
 export { Evaluate } from "./evaluate/evaluate.component";
 export { Hero } from "./hero/hero.component";
 export { Intro } from "./intro/intro.component";

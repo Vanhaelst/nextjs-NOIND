@@ -3,7 +3,7 @@ import { Button } from "@/molecules/button/button.molecule";
 
 export const Demo = (): JSX.Element => {
   return (
-    <section className="demo bg-blue pt pb">
+    <section className="demo bg-blue pt pb" id="demo">
       <div className="wrapper grid grid-cols-1 gap-4 md:grid-cols-2">
         <div>
           <h2 className="title mb-12 font-sans text-white">Boek een demo</h2>

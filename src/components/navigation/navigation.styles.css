@@ -1,0 +1,12 @@
+.navigation{
+    left: 0;
+    right: 0;
+    top: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+html{
+    scroll-behavior: smooth;
+}

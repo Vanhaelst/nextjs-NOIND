@@ -3,7 +3,7 @@ import { Button } from "@/molecules/button/button.molecule";
 
 export const WorkingWith = (): JSX.Element => {
   return (
-    <section className="bg-dark pt pb">
+    <section className="bg-dark pt pb" id="working-with">
       <div className="wrapper">
         <h2 className="title mb-12 font-sans text-white">Werken met noind</h2>
         <p className="mb-8 font-serif leading-7 text-white md:leading-10">

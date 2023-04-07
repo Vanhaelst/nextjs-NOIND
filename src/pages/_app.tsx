@@ -3,6 +3,7 @@ import '@/styles/globals.css'
 import "../molecules/button/button.styles.css";
 
 
+import "../components/navigation/navigation.styles.css";
 import "../components/hero/hero.styles.css";
 import "../components/intro/images.styles.css";
 import "../components/intro/intro.styles.css";
