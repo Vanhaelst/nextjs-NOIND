@@ -8,48 +8,6 @@ export const Navigation = (): JSX.Element => {
     setIsOpen((prevState) => !prevState);
   };
 
-  /*
-  // Burger menus
-  document.addEventListener("DOMContentLoaded", function () {
-    // open
-    const burger = document.querySelectorAll(".navbar-burger");
-    const menu = document.querySelectorAll(".navbar-menu");
-
-    if (burger.length && menu.length) {
-      for (var i = 0; i < burger.length; i++) {
-        burger[i].addEventListener("click", function () {
-          for (var j = 0; j < menu.length; j++) {
-            menu[j].classList.toggle("hidden");
-          }
-        });
-      }
-    }
-
-    // close
-    const close = document.querySelectorAll(".navbar-close");
-    const backdrop = document.querySelectorAll(".navbar-backdrop");
-
-    if (close.length) {
-      for (var i = 0; i < close.length; i++) {
-        close[i].addEventListener("click", function () {
-          for (var j = 0; j < menu.length; j++) {
-            menu[j].classList.toggle("hidden");
-          }
-        });
-      }
-    }
-
-    if (backdrop.length) {
-      for (var i = 0; i < backdrop.length; i++) {
-        backdrop[i].addEventListener("click", function () {
-          for (var j = 0; j < menu.length; j++) {
-            menu[j].classList.toggle("hidden");
-          }
-        });
-      }
-    }
-  });*/
-
   return (
     <div className="wrapper navigation fixed">
       <nav className="relative flex items-center justify-between bg-white px-4 py-4">
@@ -58,7 +16,7 @@ export const Navigation = (): JSX.Element => {
         </a>
         <div className="lg:hidden">
           <button
-            className="navbar-burger flex items-center p-3 text-blue-600"
+            className="navbar-burger flex items-center p-3 text-violet-900"
             onClick={toggleOpen}
           >
             <svg
@@ -124,7 +82,7 @@ export const Navigation = (): JSX.Element => {
         </ul>
       </nav>
       <div className={`navbar-menu relative z-50 ${!isOpen && "hidden"}`}>
-        <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25" onClick={toggleOpen}/>
         <nav className="fixed bottom-0 left-0 top-0 flex w-5/6 max-w-sm flex-col overflow-y-auto border-r bg-white px-6 py-6">
           <div className="mb-8 flex items-center">
             <a className="mr-auto text-3xl font-bold leading-none" href="/">
@@ -154,6 +112,7 @@ export const Navigation = (): JSX.Element => {
                   <a
                     className="block rounded p-4 text-sm text-md font-serif text-violet-900 hover:text-violet-500"
                     href={href}
+                    onClick={toggleOpen}
                   >
                     {label}
                   </a>
