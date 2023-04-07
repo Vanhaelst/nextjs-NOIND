@@ -16,22 +16,17 @@ export const Images = (): JSX.Element => {
             ref={ref}
             src="/images/image-1.png"
             alt="image"
-            style={!inViewport ? { transitionDelay: "1s" } : {}}
-            className={`image-stack__item--one transition-config slide fade ${inViewport} float`}
+            className={`image-stack__item--one transition-config slide fade ${inViewport} float transition-delay-1`}
           />
           <img
-            ref={ref}
             src="/images/image-2.png"
             alt="image"
-            style={!inViewport ? { transitionDelay: "1.25s" } : {}}
-            className={`image-stack__item--two transition-config slide fade ${inViewport} float`}
+            className={`image-stack__item--two transition-config slide fade ${inViewport} float animation-delay-1`}
           />
           <img
-            ref={ref}
             src="/images/image-3.png"
             alt="image"
-            style={!inViewport ? { transitionDelay: "1.5s" } : {}}
-            className={`image-stack__item--three transition-config slide fade ${inViewport} float`}
+            className={`image-stack__item--three transition-config slide fade ${inViewport} float animation-delay-2 transition-delay-2`}
           />
         </div>
       </div>

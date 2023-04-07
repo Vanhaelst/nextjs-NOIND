@@ -46,6 +46,11 @@ section.evaluate .image-stack {
   }
 }
 
+section.evaluate .image-stack__item--one,
+section.evaluate .image-stack__item--two,
+section.evaluate .image-stack__item--three {
+  border-radius: 40px;
+}
 section.evaluate .image-stack__item--one {
   grid-column: 1 / span 5;
   grid-row: 1;
@@ -56,24 +61,23 @@ section.evaluate .image-stack__item--two {
   grid-column: 5 / span 12;
   grid-row: 1;
   z-index: 2;
-  padding-top: 30%;
+  margin-top: 30%;
 }
 
 @media screen and (min-width: 1024px) {
   section.evaluate .image-stack__item--two {
-    padding-top: 50%;
+    margin-top: 50%;
   }
 }
 
 section.evaluate .image-stack__item--three {
   grid-column: 2 / span 6;
   grid-row: 1;
-  padding-top: 85%;
   z-index: 5;
 }
 
 @media screen and (min-width: 1024px) {
   section.evaluate .image-stack__item--three {
-    padding-top: 95%;
+    margin-top: 95%;
   }
 }
