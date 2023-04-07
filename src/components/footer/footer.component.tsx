@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/molecules/button/button.molecule";
 import { BottomBar } from "@/components/footer/bottom-bar.component";
+import Link from "next/link";
 
 export const Footer = (): JSX.Element => {
   return (
@@ -26,19 +27,25 @@ export const Footer = (): JSX.Element => {
               </h3>
             </div>
             <div className="mt-5 hidden md:flex">
-              <img
-                src="/images/facebook.svg"
-                alt="facebook"
-                className="mr-3"
-                width={36}
-              />
-              <img
-                src="/images/instagram.svg"
-                alt="instagram"
-                className="mr-3"
-                width={36}
-              />
-              <img src="/images/linkedin.svg" alt="linkedin" width={36} />
+              <Link href="http://www.facebook.com" target="_blank">
+                <img
+                  src="/images/facebook.svg"
+                  alt="facebook"
+                  className="mr-3"
+                  width={36}
+                />
+              </Link>
+              <Link href="http://www.instagram.com" target="_blank">
+                <img
+                  src="/images/instagram.svg"
+                  alt="instagram"
+                  className="mr-3"
+                  width={36}
+                />
+              </Link>{" "}
+              <Link href="http://www.linkedin.com" target="_blank">
+                <img src="/images/linkedin.svg" alt="linkedin" width={36} />
+              </Link>
             </div>
           </div>
           <div className="">
@@ -47,24 +54,30 @@ export const Footer = (): JSX.Element => {
             </h3>
             <input
               placeholder="E-mail"
-              className="mt-0 mb-5 px-2 font-serif text-white"
+              className="mb-5 mt-0 px-2 font-serif text-white"
             />
             <Button cta="Inschrijven" className="float-right" />
           </div>
           <div className="mt-5 block flex md:hidden">
-            <img
-              src="/images/facebook.svg"
-              alt="facebook"
-              className="mr-3"
-              width={36}
-            />
-            <img
-              src="/images/facebook.svg"
-              alt="facebook"
-              className="mr-3"
-              width={36}
-            />
-            <img src="/images/facebook.svg" alt="facebook" width={36} />
+            <Link href="http://www.facebook.com" target="_blank">
+              <img
+                src="/images/facebook.svg"
+                alt="facebook"
+                className="mr-3"
+                width={36}
+              />
+            </Link>
+            <Link href="http://www.instagram.com" target="_blank">
+              <img
+                src="/images/instagram.svg"
+                alt="instagram"
+                className="mr-3"
+                width={36}
+              />
+            </Link>{" "}
+            <Link href="http://www.linkedin.com" target="_blank">
+              <img src="/images/linkedin.svg" alt="linkedin" width={36} />
+            </Link>
           </div>
         </div>
       </footer>

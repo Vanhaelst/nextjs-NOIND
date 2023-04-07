@@ -11,13 +11,15 @@
 }
 
 .button-white {
-  background-color: white;
   padding: 13px 50px;
   color: black;
   position: relative;
   margin-bottom: 45px;
+    transition: all 0.25s;
 }
-
+.button-white:hover {
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.6);
+}
 
 .gradient:before {
   content:"";
