@@ -7,7 +7,7 @@ export const BottomBar = () => {
       <div className="wrapper flex justify-between">
         <div className="flex items-center">
           <img
-            src="/images/logo-white.png"
+            src="/images/logo-white.svg"
             alt="NOIND logo"
             className="mr-5"
             width={130}
