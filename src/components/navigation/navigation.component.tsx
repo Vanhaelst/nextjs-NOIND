@@ -10,7 +10,8 @@ export const Navigation = (): JSX.Element => {
   };
 
   return (
-    <div className="wrapper navigation fixed">
+    <div>
+    <div className="wrapper navigation fixed z-40">
       <nav className="relative flex items-center justify-between bg-white px-4 py-4">
         <a className="text-3xl font-bold leading-none" href="#">
           <img src="/images/logo.svg" alt="NOIND logo" width={150} />
@@ -82,6 +83,7 @@ export const Navigation = (): JSX.Element => {
           </li>
         </ul>
       </nav>
+    </div>
       <div className={`navbar-menu relative z-50 ${!isOpen && "hidden"}`}>
         <div
           className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"
@@ -136,6 +138,7 @@ export const Navigation = (): JSX.Element => {
           </div>
         </nav>
       </div>
+
     </div>
   );
 };

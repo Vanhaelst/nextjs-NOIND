@@ -20,10 +20,12 @@ export const Footer = (): JSX.Element => {
             </div>
             <div className="self-end">
               <h3 className="font-serif text-xl text-white">
-                <span className="font-bold">Telefoon:</span> 052 44 61 60
+                <span className="font-bold">Telefoon:</span>{" "}
+                <Link href="tel:052446160">052 44 61 60</Link>
               </h3>
               <h3 className="font-serif text-xl text-white">
-                <span className="font-bold">E-mail:</span> info@noind.be
+                <span className="font-bold">E-mail:</span>{" "}
+                <Link href="tel:info@noind.be">info@noind.be</Link>
               </h3>
             </div>
             <div className="mt-5 hidden md:flex">
@@ -56,9 +58,12 @@ export const Footer = (): JSX.Element => {
               placeholder="E-mail"
               className="mb-5 mt-0 px-2 font-serif text-white"
             />
-            <Button cta="Inschrijven" className="float-right" />
+            <Button
+              cta="Inschrijven"
+              className="float-right w-full md:w-auto"
+            />
           </div>
-          <div className="mt-5 block flex md:hidden">
+          <div className="mt-5 block flex justify-center md:hidden">
             <Link href="http://www.facebook.com" target="_blank">
               <img
                 src="/images/facebook.svg"
