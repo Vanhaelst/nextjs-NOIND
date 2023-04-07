@@ -14,4 +14,24 @@
   background-color: white;
   padding: 13px 50px;
   color: black;
+  position: relative;
+  margin-bottom: 45px;
+}
+
+
+.gradient:before {
+  content:"";
+  position: absolute;
+  inset: 0;
+  transform: translate(0px,0px);
+  z-index: -1;
+  background: linear-gradient(
+          90deg,
+          rgba(90, 116, 183, 1) 0%,
+          rgba(178, 220, 221, 1) 25%,
+          rgba(142, 106, 171, 1) 50%,
+          rgba(252, 194, 90, 1) 75%,
+          rgba(216, 116, 168, 1) 100%
+  );
+  filter: blur(20px);
 }

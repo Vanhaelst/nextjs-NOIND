@@ -12,7 +12,7 @@ export const Button: React.FC<ButtonProps> = ({
 }): JSX.Element => (
   <button
     onClick={onClick}
-    className={`button-white rounded-full font-serif ${className}`}
+    className={`gradient button-white rounded-full font-serif ${className}`}
   >
     {cta}
   </button>
