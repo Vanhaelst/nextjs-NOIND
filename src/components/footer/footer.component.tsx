@@ -63,7 +63,7 @@ export const Footer = (): JSX.Element => {
               className="float-right w-full md:w-auto"
             />
           </div>
-          <div className="mt-5 block flex justify-center md:hidden">
+          <div className="block flex justify-center md:hidden">
             <Link href="http://www.facebook.com" target="_blank">
               <img
                 src="/images/facebook.svg"

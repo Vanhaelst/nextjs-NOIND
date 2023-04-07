@@ -10,7 +10,7 @@ export const navigation: navData[] = [
   },
   {
     label: "Onze visie",
-    href: "#",
+    href: "#evaluate",
   },
   {
     label: "Academy",

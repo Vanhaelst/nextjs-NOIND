@@ -4,7 +4,7 @@ import { Images } from "./images.component";
 export const Evaluate = (): JSX.Element => {
   return (
     <>
-      <section className="evaluate pt pb">
+      <section className="evaluate pt pb" id="evaluate">
         <div className="wrapper grid">
           <h2 className="title full mb-12 font-sans">
             Evalueren. Transformeren.

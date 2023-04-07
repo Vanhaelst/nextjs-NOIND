@@ -3,7 +3,7 @@ import React from "react";
 export const Video = () => {
   return (
     <>
-      <div className="bg-dark upper" />
+      <div className="bg-dark upper" id="video" />
       <div className="wrapper pb-5">
         <img
           src="/images/video.png"

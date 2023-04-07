@@ -49,7 +49,15 @@ section.evaluate .image-stack {
 section.evaluate .image-stack__item--one,
 section.evaluate .image-stack__item--two,
 section.evaluate .image-stack__item--three {
-  border-radius: 40px;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  section.evaluate .image-stack__item--one,
+  section.evaluate .image-stack__item--two,
+  section.evaluate .image-stack__item--three {
+    border-radius: 40px;
+  }
 }
 section.evaluate .image-stack__item--one {
   grid-column: 1 / span 5;

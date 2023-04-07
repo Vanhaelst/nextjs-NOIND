@@ -24,7 +24,14 @@ section.intro .image-stack {
 section.intro .image-stack__item--one,
 section.intro .image-stack__item--two,
 section.intro .image-stack__item--three {
-  border-radius: 40px;
+  border-radius: 20px;
+}
+@media screen and (min-width: 1024px) {
+  section.intro .image-stack__item--one,
+  section.intro .image-stack__item--two,
+  section.intro .image-stack__item--three {
+    border-radius: 40px;
+  }
 }
 
 section.intro .image-stack__item--one {

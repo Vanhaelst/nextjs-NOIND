@@ -15,10 +15,12 @@ export const Hero = (): JSX.Element => (
         <h1 className="title mb-4 text-center font-sans text-white md:text-left">
           A novel way to express what we never thought we were able to express.
         </h1>
-        <div className="flex flex-row items-center">
-          <img src="/images/play.svg" alt="play" />
-          <p className="showcase pl-4 font-sans text-white">Video Showcase</p>
-        </div>
+        <a href="#video">
+          <div className="flex flex-row items-center">
+            <img src="/images/play.svg" alt="play" />
+            <p className="showcase pl-4 font-sans text-white">Video Showcase</p>
+          </div>
+        </a>
       </div>
     </div>
   </div>
