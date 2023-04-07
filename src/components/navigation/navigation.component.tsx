@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { navigation } from "./navigation.data";
+import Link from "next/link";
 
 export const Navigation = (): JSX.Element => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -31,13 +32,13 @@ export const Navigation = (): JSX.Element => {
         </div>
         <ul className="hidden lg:flex lg:flex lg:w-auto lg:items-center lg:space-x-8">
           {navigation.map(({ label, href }) => (
-            <li>
-              <a
+            <li key={label}>
+              <Link
                 className="text-md font-serif text-violet-900 hover:text-violet-500"
                 href={href}
               >
                 {label}
-              </a>
+              </Link>
             </li>
           ))}
           <li className="text-gray-300">
@@ -72,22 +73,25 @@ export const Navigation = (): JSX.Element => {
             </svg>
           </li>
           <li>
-            <a
+            <Link
               className="text-md hidden rounded-xl bg-orange-400 px-6 py-2 font-serif text-sm text-white transition hover:bg-orange-500 lg:inline-block"
               href="#demo"
             >
               Book Demo
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
       <div className={`navbar-menu relative z-50 ${!isOpen && "hidden"}`}>
-        <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25" onClick={toggleOpen}/>
+        <div
+          className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"
+          onClick={toggleOpen}
+        />
         <nav className="fixed bottom-0 left-0 top-0 flex w-5/6 max-w-sm flex-col overflow-y-auto border-r bg-white px-6 py-6">
           <div className="mb-8 flex items-center">
-            <a className="mr-auto text-3xl font-bold leading-none" href="/">
+            <Link className="mr-auto text-3xl font-bold leading-none" href="/">
               <img src="/images/logo.svg" alt="NOIND logo" width={150} />
-            </a>
+            </Link>
             <button className="navbar-close" onClick={toggleOpen}>
               <svg
                 className="h-6 w-6 cursor-pointer text-gray-400 hover:text-gray-500"
@@ -108,26 +112,26 @@ export const Navigation = (): JSX.Element => {
           <div>
             <ul>
               {navigation.map(({ label, href }) => (
-                <li className="mb-1">
-                  <a
-                    className="block rounded p-4 text-sm text-md font-serif text-violet-900 hover:text-violet-500"
+                <li className="mb-1" key={label}>
+                  <Link
+                    className="text-md block rounded p-4 font-serif text-sm text-violet-900 hover:text-violet-500"
                     href={href}
                     onClick={toggleOpen}
                   >
                     {label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
           <div className="mt-auto">
             <div className="pt-6">
-              <a
-                className="text-md rounded-xl block bg-orange-400 px-6 py-2 font-serif text-center text-sm text-white transition hover:bg-orange-500 lg:inline-block"
+              <Link
+                className="text-md block rounded-xl bg-orange-400 px-6 py-2 text-center font-serif text-sm text-white transition hover:bg-orange-500 lg:inline-block"
                 href="#"
               >
                 Book demo
-              </a>
+              </Link>
             </div>
           </div>
         </nav>
