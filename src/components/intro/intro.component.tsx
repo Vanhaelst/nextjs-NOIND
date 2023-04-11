@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/molecules/button/button.molecule";
 import { Images } from "@/components/intro/images.component";
+import Link from "next/link";
 
 export const Intro = (): JSX.Element => {
   return (
@@ -21,7 +22,9 @@ export const Intro = (): JSX.Element => {
           als einddoel het doorlopen van een uiterst efficiënte designcylus die
           aansluit bij budget, productiemogelijkheden en klantvraag.
         </p>
-        <Button cta="Lees meer" />
+        <Link href="/academy" >
+          <Button cta="Ontdek onze academy" />
+        </Link>
       </section>
       <Images />
     </>

@@ -1,6 +1,7 @@
-import React, { useState } from "react";
-import { navigation } from "./navigation.data";
+import React, { useEffect, useState } from "react";
+import { demo, navigation } from "./navigation.data";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export const Navigation = (): JSX.Element => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -9,7 +10,15 @@ export const Navigation = (): JSX.Element => {
     setIsOpen((prevState) => !prevState);
   };
 
-  // set html body to no scroll
+  useEffect(() => {
+    if (isOpen){
+      document.getElementsByTagName('html')[0].style.overflow="hidden";
+    } else{
+      document.getElementsByTagName('html')[0].style.overflow="";
+    }
+  }, [isOpen]);
+
+  const pathname = usePathname();
 
   return (
     <div>
@@ -35,9 +44,10 @@ export const Navigation = (): JSX.Element => {
           </div>
           <ul className="hidden lg:flex lg:flex lg:w-auto lg:items-center lg:space-x-8">
             {navigation.map(({ label, href }) => {
-              const foo = href.startsWith("#");
+              const anchor = href.startsWith("#");
+              const homepage = pathname === "/";
 
-              if (foo) {
+              if (anchor && homepage) {
                 return (
                   <li key={label}>
                     <a
@@ -53,7 +63,7 @@ export const Navigation = (): JSX.Element => {
                 <li key={label}>
                   <Link
                     className="text-md font-serif text-violet-900 hover:text-violet-500"
-                    href={href}
+                    href={`/${href}`}
                   >
                     {label}
                   </Link>
@@ -94,7 +104,7 @@ export const Navigation = (): JSX.Element => {
             <li>
               <a
                 className="text-md hidden rounded-xl bg-orange-400 px-6 py-2 font-serif text-sm text-white transition hover:bg-orange-500 lg:inline-block"
-                href="#demo"
+                href={demo}
               >
                 Book Demo
               </a>
@@ -131,24 +141,42 @@ export const Navigation = (): JSX.Element => {
           </div>
           <div>
             <ul>
-              {navigation.map(({ label, href }) => (
-                <li className="mb-1" key={label}>
-                  <Link
-                    className="text-md block rounded p-4 font-serif text-sm text-violet-900 hover:text-violet-500"
-                    href={href}
-                    onClick={toggleOpen}
-                  >
-                    {label}
-                  </Link>
-                </li>
-              ))}
+              {navigation.map(({ label, href }) => {
+                const anchor = href.startsWith("#");
+                const homepage = pathname === "/";
+
+                if (anchor && homepage) {
+                  return (
+                    <li key={label}>
+                      <a
+                        onClick={toggleOpen}
+                        className="text-md block rounded p-4 font-serif text-sm text-violet-900 hover:text-violet-500"
+                        href={href}
+                      >
+                        {label}
+                      </a>
+                    </li>
+                  );
+                }
+                return (
+                  <li className="mb-1" key={label}>
+                    <Link
+                      className="text-md block rounded p-4 font-serif text-sm text-violet-900 hover:text-violet-500"
+                      href={`/${href}`}
+                      onClick={toggleOpen}
+                    >
+                      {label}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div className="mt-auto">
             <div className="pt-6">
               <a
                 className="text-md block rounded-xl bg-orange-400 px-6 py-2 text-center font-serif text-sm text-white transition hover:bg-orange-500 lg:inline-block"
-                href="#"
+                href={demo}
               >
                 Book demo
               </a>

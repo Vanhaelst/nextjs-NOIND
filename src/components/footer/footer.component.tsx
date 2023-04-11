@@ -6,13 +6,11 @@ import Link from "next/link";
 export const Footer = (): JSX.Element => {
   return (
     <>
-      <footer className="bg-dark">
+      <footer className="bg-dark" id="footer">
         <div className="wrapper grid gap-4">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             <div className="self-end">
-              <h3 className="mb-1 font-serif font-bold text-white">
-                NOIND
-              </h3>
+              <h3 className="mb-1 font-serif font-bold text-white">NOIND</h3>
               <p className="font-serif text-white">
                 Lokerenbaan 112
                 <br /> 9240 Zele

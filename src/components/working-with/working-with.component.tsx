@@ -1,9 +1,12 @@
 import React from "react";
-import { Button } from "@/molecules/button/button.molecule";
 
 export const WorkingWith = (): JSX.Element => {
   return (
-    <section className="bg-dark pt pb" id="working-with">
+    <section
+      className="bg-dark pt"
+      id="working-with"
+      style={{ paddingBottom: "40px" }}
+    >
       <div className="wrapper">
         <h2 className="title mb-12 font-sans text-white">Werken met noind</h2>
         <p className="mb-8 font-serif leading-7 text-white md:leading-10">
@@ -20,7 +23,6 @@ export const WorkingWith = (): JSX.Element => {
           NOIND-designer de eindklant een kwalitatief materieel eindproduct
           bovenop een unieke en betekenisvolle beleving.
         </p>
-        <Button cta="Lees meer" />
       </div>
     </section>
   );
