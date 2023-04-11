@@ -14,6 +14,7 @@ import "../components/evaluate/images.styles.css";
 
 import "../components/footer/footer.styles.css";
 import "../components/video/video.styles.css";
+import "../components/founders/founders.styles.css";
 
 
 import "../components/working-with/working-with.styles.css";

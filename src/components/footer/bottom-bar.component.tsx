@@ -4,12 +4,12 @@ export const BottomBar = () => {
   const year = new Date().getFullYear();
   return (
     <div style={{ backgroundColor: "#151513" }} className="py-6">
-      <div className="wrapper flex justify-between  flex-col lg:flex-row">
-        <div className="flex items-center flex-col lg:flex-row">
+      <div className="wrapper flex justify-between items-center flex-col lg:flex-row">
+        <div className="flex items-center justify-center flex-col lg:flex-row">
           <img
             src="/images/logo-white.svg"
             alt="NOIND logo"
-            className="mb-5 lg:mb-2 lg:mr-5"
+            className="mb-5 lg:mb-0 lg:mr-5"
             width={130}
           />
           <p className="font-serif text-sm text-white">

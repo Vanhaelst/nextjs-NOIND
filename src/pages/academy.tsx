@@ -1,10 +1,8 @@
 import Head from "next/head";
-import {
-  Hero,
-  Intro,
-  Navigation,
-} from "@/components";
+import { Banner, Demo, Intro, Navigation, Footer } from "@/components";
 import { Bebas_Neue, IBM_Plex_Mono } from "next/font/google";
+import { academyIntro } from "@/data/academy-intro";
+import { Founders } from "@/components/founders/founders.component";
 
 const bebasNeue = Bebas_Neue({
   weight: "400",
@@ -22,14 +20,24 @@ export default function Home() {
     <>
       <Head>
         <title>NOIND - Academy</title>
-        <meta name="description" content="A novel way to express what we never thought we were able to express." />
+        <meta
+          name="description"
+          content="A novel way to express what we never thought we were able to express."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${bebasNeue.variable} ${ibmPlexMono.variable} `}>
         <Navigation />
-        <Hero />
-        <Intro />
+        <Banner />
+        <Intro
+          paragraphs={academyIntro}
+          cta="Ontmoet de founders"
+          href="#founders"
+        />
+        <Founders />
+        <Demo />
+        <Footer />
       </main>
     </>
   );

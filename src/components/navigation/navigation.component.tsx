@@ -11,10 +11,10 @@ export const Navigation = (): JSX.Element => {
   };
 
   useEffect(() => {
-    if (isOpen){
-      document.getElementsByTagName('html')[0].style.overflow="hidden";
-    } else{
-      document.getElementsByTagName('html')[0].style.overflow="";
+    if (isOpen) {
+      document.getElementsByTagName("html")[0].style.overflow = "hidden";
+    } else {
+      document.getElementsByTagName("html")[0].style.overflow = "";
     }
   }, [isOpen]);
 
@@ -43,11 +43,11 @@ export const Navigation = (): JSX.Element => {
             </button>
           </div>
           <ul className="hidden lg:flex lg:flex lg:w-auto lg:items-center lg:space-x-8">
-            {navigation.map(({ label, href }) => {
+            {navigation.map(({ label, href, type }) => {
               const anchor = href.startsWith("#");
               const homepage = pathname === "/";
 
-              if (anchor && homepage) {
+              if ((anchor && homepage) || (anchor && type === "self")) {
                 return (
                   <li key={label}>
                     <a
@@ -141,11 +141,11 @@ export const Navigation = (): JSX.Element => {
           </div>
           <div>
             <ul>
-              {navigation.map(({ label, href }) => {
+              {navigation.map(({ label, href, type }) => {
                 const anchor = href.startsWith("#");
                 const homepage = pathname === "/";
 
-                if (anchor && homepage) {
+                if ((anchor && homepage) || (anchor && type === "self")) {
                   return (
                     <li key={label}>
                       <a

@@ -10,6 +10,7 @@ import {
   Navigation,
 } from "@/components";
 import { Bebas_Neue, IBM_Plex_Mono } from "next/font/google";
+import { homeIntro } from "@/data/home-intro";
 
 const bebasNeue = Bebas_Neue({
   weight: "400",
@@ -27,14 +28,22 @@ export default function Home() {
     <>
       <Head>
         <title>NOIND</title>
-        <meta name="description" content="A novel way to express what we never thought we were able to express." />
+        <meta
+          name="description"
+          content="A novel way to express what we never thought we were able to express."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${bebasNeue.variable} ${ibmPlexMono.variable} `}>
         <Navigation />
         <Hero />
-        <Intro />
+        <Intro
+          paragraphs={homeIntro}
+          cta="Ontdek onze academy"
+          href="/academy"
+          images
+        />
         <WorkingWith />
         <Video />
         <Evaluate />

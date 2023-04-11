@@ -1,0 +1,28 @@
+.founders .intro {
+  width: 75%;
+}
+
+
+.founder {
+  margin-top: 130px;
+}
+
+.founder .intro {
+  display: flex;
+  align-items: center;
+}
+
+.founder .intro img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 40px;
+  box-shadow: 0 0 52px 0 rgba(0,0,0,0.20);
+
+}
+
+.founder .name {
+  font-size: 42px;
+  width: 40%;
+  margin-bottom: 0;
+}
