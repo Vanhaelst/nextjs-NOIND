@@ -2,23 +2,33 @@
   width: 75%;
 }
 
-
 .founder {
-  margin-top: 130px;
+  margin-top: 75px;
 }
-
+@media screen and (min-width: 768px) {
+  .founder {
+    margin-top: 130px;
+  }
+}
 .founder .intro {
   display: flex;
   align-items: center;
 }
 
 .founder .intro img {
-  width: 160px;
-  height: 160px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
-  border-radius: 40px;
-  box-shadow: 0 0 52px 0 rgba(0,0,0,0.20);
+  border-radius: 25px;
+  box-shadow: 0 0 52px 0 rgba(0, 0, 0, 0.2);
+}
 
+@media screen and (min-width: 768px) {
+  .founder .intro img {
+    width: 160px;
+    height: 160px;
+    border-radius: 40px;
+  }
 }
 
 .founder .name {
