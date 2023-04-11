@@ -1,3 +1,4 @@
+export { AcademyImages } from "./academy-images/academy-images.component";
 export { Banner } from "./banner/banner.component";
 export { Navigation } from "./navigation/navigation.component";
 export { Evaluate } from "./evaluate/evaluate.component";

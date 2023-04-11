@@ -3,6 +3,7 @@ import { Banner, Demo, Intro, Navigation, Footer } from "@/components";
 import { Bebas_Neue, IBM_Plex_Mono } from "next/font/google";
 import { academyIntro } from "@/data/academy-intro";
 import { Founders } from "@/components/founders/founders.component";
+import { AcademyImages } from "@/components/academy-images/academy-images.component";
 
 const bebasNeue = Bebas_Neue({
   weight: "400",
@@ -36,6 +37,7 @@ export default function Home() {
           href="#founders"
         />
         <Founders />
+        <AcademyImages />
         <Demo />
         <Footer />
       </main>
