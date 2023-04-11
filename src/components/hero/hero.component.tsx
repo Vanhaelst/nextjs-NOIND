@@ -2,12 +2,8 @@ import React from "react";
 
 export const Hero = (): JSX.Element => (
   <div
-    style={{
-      backgroundImage: "url('/images/hero.png')",
-      height: "90vh",
-      backgroundAttachment: "fixed",
-    }}
-    className="flex justify-center bg-cover bg-center"
+    style={{ backgroundImage: "url('/images/hero.png')" }}
+    className="flex justify-center bg-cover bg-center hero"
   >
     <div className="wrapper flex flex-col items-center justify-center lg:flex-row">
       <img src="/images/logo_icon.png" alt="NOIND icon" className="logo" />

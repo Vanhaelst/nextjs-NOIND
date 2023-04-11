@@ -39,3 +39,13 @@
 .showcase {
   font-size: 24px;
 }
+
+
+.hero {
+  height: 90vh;
+}
+@media screen and (min-width: 1024px) {
+  .hero {
+    background-attachment: fixed;
+  }
+}
