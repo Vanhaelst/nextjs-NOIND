@@ -49,7 +49,7 @@ export const Intro = ({
         {paragraphs?.map((text, index) => (
           <p
             key={index}
-            className={`mb-8 font-serif italic leading-7 text-black md:leading-10 ${
+            className={`mb-8 font-serif leading-7 text-black md:leading-10 ${
               index === paragraphs.length - 1 && "pb-10"
             }`}
           >
