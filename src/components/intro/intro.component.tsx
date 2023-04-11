@@ -10,8 +10,17 @@ interface introProps {
   images?: boolean;
 }
 
-const renderButtons = ({ href, cta }) => {
-  const anchor = href.startsWith("#");
+interface buttonProps {
+  href: introProps["href"];
+  cta: introProps["cta"];
+}
+
+const renderButtons = ({ href, cta }: buttonProps) => {
+  const anchor = href?.startsWith("#");
+
+  if (!cta) {
+    return null;
+  }
 
   if (anchor) {
     return (
@@ -22,7 +31,7 @@ const renderButtons = ({ href, cta }) => {
   }
 
   return (
-    <Link href={href}>
+    <Link href={href || "#"}>
       <Button cta={cta} />
     </Link>
   );
@@ -39,6 +48,7 @@ export const Intro = ({
       <section className={`wrapper pt intro ${!images && "pb"}`}>
         {paragraphs?.map((text, index) => (
           <p
+            key={index}
             className={`mb-8 font-serif italic leading-7 text-black md:leading-10 ${
               index === paragraphs.length - 1 && "pb-10"
             }`}
