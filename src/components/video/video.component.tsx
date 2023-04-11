@@ -12,7 +12,7 @@ export const Video = () => {
         <Player
           playsInline
           poster="/images/video.png"
-          src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+          src="noind.publiplus.be/noind-animate.mp4"
         />
       </div>
     </>

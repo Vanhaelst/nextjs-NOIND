@@ -24,9 +24,9 @@ export const Navigation = (): JSX.Element => {
     <div>
       <div className="wrapper navigation fixed z-40">
         <nav className="relative flex items-center justify-between bg-white px-4 py-4">
-          <a className="text-3xl font-bold leading-none" href="/">
+          <Link className="text-3xl font-bold leading-none" href="/">
             <img src="/images/logo.svg" alt="NOIND logo" width={150} />
-          </a>
+          </Link>
           <div className="lg:hidden">
             <button
               className="navbar-burger flex items-center p-3 text-violet-900"
