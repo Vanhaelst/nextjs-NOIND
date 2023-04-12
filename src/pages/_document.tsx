@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import React from "react";
 
 export default function Document() {
   return (
@@ -28,6 +29,8 @@ export default function Document() {
         <Main />
         <NextScript />
       </body>
+
+      <script src="https://player.vimeo.com/api/player.js" async></script>
     </Html>
   );
 }

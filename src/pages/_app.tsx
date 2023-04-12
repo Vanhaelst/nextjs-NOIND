@@ -1,5 +1,3 @@
-import "node_modules/video-react/dist/video-react.css";
-
 import "@/styles/globals.css";
 
 import "../molecules/button/button.styles.css";
