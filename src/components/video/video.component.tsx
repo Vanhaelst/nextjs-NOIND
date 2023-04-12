@@ -1,8 +1,5 @@
 import React from "react";
-import { Player } from "video-react";
-
-
-//TODO: add correct video
+import { Player, BigPlayButton } from "video-react";
 
 export const Video = () => {
   return (
@@ -12,8 +9,10 @@ export const Video = () => {
         <Player
           playsInline
           poster="/images/video.png"
-          src="noind.publiplus.be/noind-animate.mp4"
-        />
+          src="https://noind.publiplus.be/noind-animate.mp4"
+        >
+          <BigPlayButton />
+        </Player>
       </div>
     </>
   );
