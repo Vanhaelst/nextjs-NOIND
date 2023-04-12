@@ -119,7 +119,7 @@ export const Navigation = (): JSX.Element => {
         />
         <nav className="fixed bottom-0 left-0 top-0 flex w-5/6 max-w-sm flex-col overflow-y-auto border-r bg-white px-6 py-6">
           <div className="mb-8 flex items-center">
-            <Link className="mr-auto text-3xl font-bold leading-none" href="/">
+            <Link className="mr-auto text-3xl font-bold leading-none" href="/" onClick={toggleOpen}>
               <img src="/images/logo.svg" alt="NOIND logo" width={150} />
             </Link>
             <button className="navbar-close" onClick={toggleOpen}>
