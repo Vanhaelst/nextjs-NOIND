@@ -29,6 +29,24 @@
   }
 }
 
+.subtitle {
+  font-size: 40px;
+  text-align: center;
+  line-height: 101%;
+
+  @media screen and (min-width: 768px) {
+    font-size: 50px;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 60px;
+    text-align: left;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 70px;
+    text-align: left;
+  }
+}
+
 .logo {
   max-width: 150px;
   padding-bottom: 25px;

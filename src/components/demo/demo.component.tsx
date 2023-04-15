@@ -6,17 +6,33 @@ export const Demo = (): JSX.Element => {
     <section className="demo bg-blue pt pb" id="demo">
       <div className="wrapper grid grid-cols-1 gap-4 md:grid-cols-2">
         <div>
-          <h2 className="title mb-12 font-sans text-white">Boek een demo</h2>
+          <h2 className="title mb-12 font-sans text-white">
+            Bezoek de digitale toonzaal
+          </h2>
           <p className="mb-8 font-serif leading-7 text-white md:leading-10">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget
-            finibus orci. Pellentesque vel erat accumsan, malesuada augue eget,
-            ultricies enim. Vivamus condimentum scelerisque nisi eget euismod.
-            Sed pulvinar gravida placerat. Fusce faucibus pellentesque mauris,
-            at eleifend turpis suscipit sit amet. In est nunc,
+            Meer weten over NOIND? Breng een bezoek aan onze digitale toonzaal.
+            Dit kan vanop eigen locatie, enige vereiste is dat u een VR-bril ter
+            beschikking hebt.<sup>*</sup>
+          </p>
+          <p className="mb-8 font-serif leading-7 text-white md:leading-10">
+            Na reservering van uw bezoek, krijgt u een bevestigingsmail met
+            verdere instructies.
+          </p>
+          <p className="mb-8 font-serif leading-7 text-white md:leading-10">
+            Wees welkom in het NOIND Universe!
+          </p>
+          <p className="mb-8 font-serif text-xs leading-loose text-white">
+            <sup>*</sup>Hebt u geen VR-bril, maar wenst u toch contact? Neem
+            gerust contact op via <a href="mailto:info@noind.be" className="hover:underline">info@noind.be</a>.
           </p>
           <Button cta="Boek hier" />
         </div>
-        <img src="/images/demo.png" alt="demo" className="flex justify-self-center self-center pt-10 md:justify-self-end md:pt-0" style={{ width: "80%" }} />
+        <img
+          src="/images/demo.png"
+          alt="demo"
+          className="flex self-center justify-self-center pt-10 md:justify-self-end md:pt-0"
+          style={{ width: "80%" }}
+        />
       </div>
     </section>
   );

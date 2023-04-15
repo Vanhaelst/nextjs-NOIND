@@ -1,11 +1,12 @@
 import React from "react";
+import Link from "next/link";
 
 export const BottomBar = () => {
   const year = new Date().getFullYear();
   return (
     <div style={{ backgroundColor: "#151513" }} className="py-6">
-      <div className="wrapper flex justify-between items-center flex-col lg:flex-row">
-        <div className="flex items-center justify-center flex-col lg:flex-row">
+      <div className="wrapper flex flex-col items-center justify-between lg:flex-row">
+        <div className="flex flex-col items-center justify-center lg:flex-row">
           <img
             src="/images/logo-white.svg"
             alt="NOIND logo"
@@ -16,13 +17,13 @@ export const BottomBar = () => {
             Alle rechten voorbehouden - NOIND {year}
           </p>
         </div>
-        <p className="font-serif text-sm text-white text-center lg:text-left">
-          <a href="#" className="hover:underline">
-            Privacy policy
-          </a>{" "}
-          |{" "}
-          <a href="#" className="hover:underline">
-            Cookie policy
+        <p className="text-center font-serif text-sm text-white lg:text-left">
+          <Link href="/policy" className="hover:underline">
+            Privacy and cookie policy
+          </Link>{" "}
+          - Made by{" "}
+          <a href="http://www.pixell.be" target="_blank" className="hover:underline">
+            Pixell
           </a>
         </p>
       </div>

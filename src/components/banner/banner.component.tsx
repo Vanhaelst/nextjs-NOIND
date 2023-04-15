@@ -1,13 +1,13 @@
 import React from "react";
 
-export const Banner = (): JSX.Element => (
+export const Banner = ({ title }: { title: string }): JSX.Element => (
   <div
-    style={{ backgroundImage: "url('/images/hero.png')", height: '35vh' }}
+    style={{ backgroundImage: "url('/images/hero.png')", height: "35vh" }}
     className="hero flex justify-center bg-cover bg-center"
   >
     <div className="wrapper flex flex-col items-center justify-center lg:flex-row">
-      <h1 className="title mb-4 text-center font-sans text-white md:text-left pt-10 mt-10">
-        NOIND ACADEMY
+      <h1 className="title mb-4 mt-10 pt-10 text-center font-sans text-white md:text-left">
+        {title}
       </h1>
     </div>
   </div>
