@@ -33,11 +33,11 @@ export default function Home() {
 
         <section className="pt pb" id="evaluate">
           <div className="wrapper grid">
-            {policy.map(({ title, description }) => (
-              <div className="mb-20">
+            {policy.map(({ title, description },index) => (
+              <div className="mb-20" key={index}>
                 <h2 className="subtitle full mb-5 font-sans">{title}</h2>
-                {description?.map((text) => (
-                  <p className="full mb-20 mb-2 font-serif leading-7 md:leading-10">
+                {description?.map((text, index) => (
+                  <p className="full mb-2 mb-20 font-serif leading-7 md:leading-10" key={index}>
                     {text}
                   </p>
                 ))}
