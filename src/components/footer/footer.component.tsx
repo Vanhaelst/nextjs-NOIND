@@ -18,16 +18,12 @@ export const Footer = (): JSX.Element => {
             </div>
             <div className="self-end">
               <h3 className="font-serif text-white">
-                <span className="font-bold">Telefoon:</span>{" "}
-                <Link href="tel:052446160">052 44 61 60</Link>
-              </h3>
-              <h3 className="font-serif text-white">
                 <span className="font-bold">E-mail:</span>{" "}
                 <Link href="mailto:info@noind.be">info@noind.be</Link>
               </h3>
             </div>
             <div className="mt-5 hidden md:flex">
-              <Link href="https://www.facebook.com/NOIND-109429592123364" target="_blank">
+              <Link href="https://www.facebook.com/NOIND.be" target="_blank">
                 <img
                   src="/images/facebook.svg"
                   alt="facebook"
@@ -62,7 +58,7 @@ export const Footer = (): JSX.Element => {
             />
           </div>
           <div className="block flex justify-center md:hidden">
-            <Link href="http://www.facebook.com" target="_blank">
+            <Link href="https://www.facebook.com/NOIND.be" target="_blank">
               <img
                 src="/images/facebook.svg"
                 alt="facebook"
@@ -70,7 +66,7 @@ export const Footer = (): JSX.Element => {
                 width={24}
               />
             </Link>
-            <Link href="http://www.instagram.com" target="_blank">
+            <Link href="https://www.instagram.com/noind.be/" target="_blank">
               <img
                 src="/images/instagram.svg"
                 alt="instagram"
@@ -78,7 +74,7 @@ export const Footer = (): JSX.Element => {
                 width={24}
               />
             </Link>{" "}
-            <Link href="http://www.linkedin.com" target="_blank">
+            <Link href="https://www.linkedin.com/company/noind/" target="_blank">
               <img src="/images/linkedin.svg" alt="linkedin" width={24} />
             </Link>
           </div>
