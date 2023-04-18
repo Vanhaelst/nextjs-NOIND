@@ -27,4 +27,4 @@ export const navigation: navData[] = [
   },
 ];
 
-export const demo = "#booking"
+export const demo = "https://outlook.office365.com/owa/calendar/NOINDBookings@noind.be/bookings/"

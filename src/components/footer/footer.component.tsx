@@ -15,13 +15,12 @@ export const Footer = (): JSX.Element => {
                 Lokerenbaan 112
                 <br /> 9240 Zele
               </p>
-            </div>
-            <div className="self-end">
-              <h3 className="font-serif text-white">
+              <h3 className="font-serif text-white mt-4">
                 <span className="font-bold">E-mail:</span>{" "}
                 <Link href="mailto:info@noind.be">info@noind.be</Link>
               </h3>
             </div>
+            <div className="self-end"/>
             <div className="mt-5 hidden md:flex">
               <Link href="https://www.facebook.com/NOIND.be" target="_blank">
                 <img
