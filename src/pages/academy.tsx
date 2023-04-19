@@ -4,6 +4,7 @@ import { Bebas_Neue, IBM_Plex_Mono } from "next/font/google";
 import { academyIntro } from "@/data/academy-intro";
 import { Founders } from "@/components/founders/founders.component";
 import { AcademyImages } from "@/components/academy-images/academy-images.component";
+import React from "react";
 
 const bebasNeue = Bebas_Neue({
   weight: "400",
@@ -28,6 +29,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <div className="overlay-black" id="go-live">
+        <img src="/images/logo-white.svg" alt="NOIND logo" width={150} />
+      </div>
+
       <main className={`${bebasNeue.variable} ${ibmPlexMono.variable} `}>
         <Navigation />
         <Banner title="NOIND ACADEMY" />
