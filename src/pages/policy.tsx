@@ -28,9 +28,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="overlay-black" id="go-live">
-        <img src="/images/logo-white.svg" alt="NOIND logo" width={150} />
-      </div>
+      {/*<div className="overlay-black" id="go-live"/>*/}
 
       <main className={`${bebasNeue.variable} ${ibmPlexMono.variable} `}>
         <Navigation />
@@ -38,11 +36,14 @@ export default function Home() {
 
         <section className="pt pb" id="evaluate">
           <div className="wrapper grid">
-            {policy.map(({ title, description },index) => (
+            {policy.map(({ title, description }, index) => (
               <div className="mb-20" key={index}>
                 <h2 className="subtitle full mb-5 font-sans">{title}</h2>
                 {description?.map((text, index) => (
-                  <p className="full mb-2 mb-20 font-serif leading-7 md:leading-10" key={index}>
+                  <p
+                    className="full mb-2 mb-20 font-serif leading-7 md:leading-10"
+                    key={index}
+                  >
                     {text}
                   </p>
                 ))}

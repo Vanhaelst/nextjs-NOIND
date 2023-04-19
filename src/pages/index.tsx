@@ -37,9 +37,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="overlay-black" id="go-live">
-        <img src="/images/logo-white.svg" alt="NOIND logo" width={150} />
-      </div>
+      {/*<div className="overlay-black" id="go-live"/>*/}
 
       <main className={`${bebasNeue.variable} ${ibmPlexMono.variable} `}>
         <Navigation />
