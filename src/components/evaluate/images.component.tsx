@@ -14,7 +14,7 @@ export const Images = (): JSX.Element => {
         <div className="image-stack">
           <img
             ref={ref}
-            src="/images/njuuu.jpg"
+            src="/images/evaluate.jpeg"
             alt="image"
             className={`image-stack__item--one transition-config slide fade float animation-delay-1 ${inViewport}`}
           />
