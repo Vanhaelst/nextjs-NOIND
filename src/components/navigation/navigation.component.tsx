@@ -102,14 +102,15 @@ export const Navigation = (): JSX.Element => {
                   </g>
                 </svg>
               </li>
+              {/*
               <li>
                 <a
                   className="text-md hidden rounded-xl bg-orange-400 px-6 py-2 font-serif text-sm text-white transition hover:bg-orange-500 lg:inline-block"
                   href={demo}
                 >
-                  Book Demo
+                  Boek een demo
                 </a>
-              </li>
+              </li>*/}
             </ul>
           </nav>
         </div>
@@ -183,7 +184,7 @@ export const Navigation = (): JSX.Element => {
                   className="text-md block rounded-xl bg-orange-400 px-6 py-2 text-center font-serif text-sm text-white transition hover:bg-orange-500 lg:inline-block"
                   href={demo}
                 >
-                  Book demo
+                  Boek een demo
                 </a>
               </div>
             </div>
@@ -192,11 +193,11 @@ export const Navigation = (): JSX.Element => {
       </div>
       <div className="booking">
         <a
-            className="text-md block bg-orange-400 px-6 py-2 md:px-10 md:py-4 text-center font-serif text-sm text-white transition hover:bg-orange-500 lg:inline-block md:rounded-xl"
+            className="text-md floatSmall block bg-orange-400 px-6 py-2 md:px-10 md:py-4 text-center font-serif text-sm text-white transition hover:bg-orange-500 lg:inline-block md:rounded-xl"
             href={demo}
             target="_blank"
         >
-          Book demo
+          Boek een demo
         </a>
       </div>
     </>
