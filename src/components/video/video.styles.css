@@ -6,16 +6,6 @@
     height: 250px;
   }
 }
-@media screen and (min-width: 1024px) {
-  .upper {
-    height: 350px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .upper {
-    height: 400px;
-  }
-}
 
 .video-react {
   margin-top: -100px;

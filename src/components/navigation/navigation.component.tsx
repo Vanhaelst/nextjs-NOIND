@@ -71,37 +71,6 @@ export const Navigation = (): JSX.Element => {
                   </li>
                 );
               })}
-              <li className="text-gray-300">
-                <svg
-                  width="2px"
-                  height="30px"
-                  viewBox="0 0 2 40"
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g
-                    id="Symbols"
-                    stroke="none"
-                    strokeWidth="1"
-                    fill="none"
-                    fillRule="evenodd"
-                  >
-                    <g
-                      id="Navigation"
-                      transform="translate(-1229.000000, -35.000000)"
-                      stroke="#ECECEC"
-                    >
-                      <line
-                        x1="1229.65707"
-                        y1="35.5"
-                        x2="1229.65707"
-                        y2="74.0917544"
-                        id="Path-2"
-                      ></line>
-                    </g>
-                  </g>
-                </svg>
-              </li>
               {/*
               <li>
                 <a

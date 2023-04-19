@@ -4,7 +4,7 @@ import Link from "next/link";
 export const BottomBar = () => {
   const year = new Date().getFullYear();
   return (
-    <div style={{ backgroundColor: "#151513" }} className="pt-6 pb-20">
+    <div style={{ backgroundColor: "#151513" }} className="pt-6 pb-20 md:pb-6">
       <div className="wrapper flex flex-col items-center justify-between lg:flex-row">
         <div className="flex flex-col items-center justify-center lg:flex-row">
           <img
