@@ -43,7 +43,7 @@ export const Navigation = (): JSX.Element => {
                 </svg>
               </button>
             </div>
-            <ul className="hidden lg:flex lg:flex lg:w-auto lg:items-center lg:space-x-8">
+            <ul className="hidden lg:flex lg:flex lg:w-auto lg:items-center">
               {navigation.map(({ label, href, type }) => {
                 const anchor = href.startsWith("#");
                 const homepage = pathname === "/";
@@ -52,7 +52,7 @@ export const Navigation = (): JSX.Element => {
                   return (
                     <li key={label}>
                       <a
-                        className="text-md font-serif text-violet-900 hover:text-violet-500"
+                        className="text-md font-serif text-violet-900 hover:text-violet-500 mr-8"
                         href={href}
                       >
                         {label}
@@ -63,7 +63,7 @@ export const Navigation = (): JSX.Element => {
                 return (
                   <li key={label}>
                     <Link
-                      className="text-md font-serif text-violet-900 hover:text-violet-500"
+                      className="text-md font-serif text-violet-900 hover:text-violet-500 mr-8"
                       href={`/${href}`}
                     >
                       {label}
