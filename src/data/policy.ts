@@ -2,8 +2,8 @@ export const policy = [
     {
         title: "Wie zijn we",
         description: [
-            "NOIND:  Lokerenbaan 112, 9240 Zele",
-            "Telefoon: 052 44 61 60",
+            "NOIND, a brand of Methomanica",
+            "Pr. Edward Poppestraat 24c, 9220 Moerzeke",
             "E-mail: info@noind.be"
         ]
     },
