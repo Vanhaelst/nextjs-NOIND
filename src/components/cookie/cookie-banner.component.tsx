@@ -8,7 +8,7 @@ const setCookies = () => {
   googleTagManager.async = true;
   googleTagManager.src = `https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS}`;
   const foo = document.getElementsByTagName("script")[0];
-  foo.parentNode.insertBefore(googleTagManager, foo);
+  foo?.parentNode?.insertBefore(googleTagManager, foo);
 
   const dataLayer = document.createElement("script");
   dataLayer.text = `
@@ -19,7 +19,7 @@ const setCookies = () => {
               gtag('config', '${GOOGLE_ANALYTICS}');
           `;
   const bar = document.getElementsByTagName("script")[1];
-  bar.parentNode.insertBefore(dataLayer, bar);
+  bar.parentNode?.insertBefore(dataLayer, bar);
 
   // you can add facebook-pixel and other cookies here
 };
