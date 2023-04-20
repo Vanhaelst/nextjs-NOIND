@@ -30,6 +30,7 @@ export const CookieBanner = () => {
 
   useEffect(() => {
     const acceptedCookies = localStorage.getItem("acceptedCookies");
+
     if (!acceptedCookies) {
       setTimeout(() => {
         setShow(true);
@@ -48,12 +49,12 @@ export const CookieBanner = () => {
   }, [show]);
 
   const handleClick = () => {
-    setShow(false);
     localStorage.setItem("acceptedCookies", "true");
+    setShow(false);
   };
 
   return (
-    <div className={`cookie-policy ${show ? "" : "show"}`}>
+    <div className={`cookie-policy ${show ? "show" : ""}`}>
       <div style={{ backgroundColor: "rgb(255, 255, 255)" }}>
         <div
           className="w-72 rounded-lg bg-white p-6 shadow-md"
