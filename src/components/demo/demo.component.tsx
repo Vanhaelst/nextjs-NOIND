@@ -1,5 +1,7 @@
 import React from "react";
 import { Button } from "@/molecules/button/button.molecule";
+import Link from "next/link";
+import { demo } from "@/components/navigation/navigation.data";
 
 export const Demo = (): JSX.Element => {
   return (
@@ -23,9 +25,15 @@ export const Demo = (): JSX.Element => {
           </p>
           <p className="mb-8 font-serif text-xs leading-loose text-white">
             <sup>*</sup>Hebt u geen VR-bril, maar wenst u toch contact? Neem
-            gerust contact op via <a href="mailto:info@noind.be" className="hover:underline">info@noind.be</a>.
+            gerust contact op via{" "}
+            <a href="mailto:info@noind.be" className="hover:underline">
+              info@noind.be
+            </a>
+            .
           </p>
-          <Button cta="Boek hier" />
+          <Link href={demo}>
+            <Button cta="Boek hier" />
+          </Link>
         </div>
         <img
           src="/images/demo.png"
