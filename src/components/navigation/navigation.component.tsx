@@ -152,6 +152,7 @@ export const Navigation = (): JSX.Element => {
                 <a
                   className="text-md block rounded-xl bg-orange-400 px-6 py-2 text-center font-serif text-sm text-white transition hover:bg-orange-500 lg:inline-block"
                   href={demo}
+                  target="_blank"
                 >
                   Boek een demo
                 </a>

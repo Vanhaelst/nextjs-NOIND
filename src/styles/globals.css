@@ -61,6 +61,16 @@ a {
   text-decoration: none;
 }
 
+#iframe_flxml_form input {
+  width: 100%;
+  height: 50px;
+  margin-top: 24px;
+  border-radius: 6px;
+  background-color: #323232;
+  color: white;
+}
+
+
 /* -------------------------------- */
 
 .bg-dark {
