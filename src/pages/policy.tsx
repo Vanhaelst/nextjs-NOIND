@@ -3,6 +3,7 @@ import { Banner, Navigation, Footer } from "@/components";
 import { Bebas_Neue, IBM_Plex_Mono } from "next/font/google";
 import React from "react";
 import { policy } from "@/data/policy";
+import {CookieBanner} from "@/components/cookie/cookie-banner.component";
 
 const bebasNeue = Bebas_Neue({
   weight: "400",
@@ -53,6 +54,8 @@ export default function Home() {
         </section>
 
         <Footer />
+
+        <CookieBanner />
       </main>
     </>
   );

@@ -5,6 +5,7 @@ import { academyIntro } from "@/data/academy-intro";
 import { Founders } from "@/components/founders/founders.component";
 import { AcademyImages } from "@/components/academy-images/academy-images.component";
 import React from "react";
+import { CookieBanner } from "@/components/cookie/cookie-banner.component";
 
 const bebasNeue = Bebas_Neue({
   weight: "400",
@@ -44,6 +45,8 @@ export default function Home() {
         <AcademyImages />
         <Demo />
         <Footer />
+
+        <CookieBanner />
       </main>
     </>
   );

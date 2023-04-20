@@ -225,3 +225,22 @@ section.pb {
   justify-content: center;
   align-items: center;
 }
+
+
+.cookie-policy {
+  position: fixed;
+  bottom: 20px;
+  right: -500px;
+  z-index: 10000;
+  border-radius: 24px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.cookie-policy.show {
+  right: 20px;
+  opacity: 1;
+  transition: opacity 0.25s;
+}
+
+

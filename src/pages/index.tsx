@@ -12,6 +12,7 @@ import {
 import { Bebas_Neue, IBM_Plex_Mono } from "next/font/google";
 import { homeIntro } from "@/data/home-intro";
 import React from "react";
+import {CookieBanner} from "@/components/cookie/cookie-banner.component";
 
 const bebasNeue = Bebas_Neue({
   weight: "400",
@@ -53,6 +54,8 @@ export default function Home() {
         <Evaluate />
         <Demo />
         <Footer />
+
+        <CookieBanner />
       </main>
     </>
   );
