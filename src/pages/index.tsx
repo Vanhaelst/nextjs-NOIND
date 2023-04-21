@@ -43,6 +43,7 @@ export default function Home() {
       <main className={`${bebasNeue.variable} ${ibmPlexMono.variable} `}>
         <Navigation />
         <Hero />
+        <Demo />
         <Intro
           paragraphs={homeIntro}
           cta="Ontdek onze academy"
@@ -52,7 +53,6 @@ export default function Home() {
         <WorkingWith />
         <Video />
         <Evaluate />
-        <Demo />
         <Footer />
 
         <CookieBanner />

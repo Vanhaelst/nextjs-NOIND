@@ -13,8 +13,8 @@ export const Footer = (): JSX.Element => {
             <div className="self-end">
               <h3 className="mb-1 font-serif font-bold text-white">NOIND</h3>
               <p className="font-serif text-white">
-                Lokerenbaan 112
-                <br /> 9240 Zele
+                Pr. Edward Poppestraat 24c
+                <br /> 9220 Moerzeke
               </p>
               <h3 className="mt-4 font-serif text-white">
                 <span className="font-bold">E-mail:</span>{" "}

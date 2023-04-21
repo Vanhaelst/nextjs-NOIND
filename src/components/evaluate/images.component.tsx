@@ -7,26 +7,26 @@ export const Images = (): JSX.Element => {
   const inViewport = enterCount > 0 ? "inViewport" : "";
 
   return (
-    <section className="evaluate images bg-blue">
+    <section className="evaluate images bg-white">
       <div className="upper bg-white" />
 
-      <div className="wrapper-xl pb">
+      <div className="wrapper-xl pb-20">
         <div className="image-stack">
           <img
             ref={ref}
             src="/images/evaluate.jpeg"
             alt="image"
-            className={`image-stack__item--one transition-config slide fade float animation-delay-1 ${inViewport}`}
+            className={`image-stack__item--one transition-config slide fade animation-delay-1 ${inViewport}`}
           />
           <img
             src="/images/5.jpg"
             alt="image"
-            className={`image-stack__item--two transition-config slide fade float transition-delay-1 ${inViewport}`}
+            className={`image-stack__item--two transition-config slide fade transition-delay-1 ${inViewport}`}
           />
           <img
             src="/images/7.jpg"
             alt="image"
-            className={`image-stack__item--three transition-config slide fade float transition-delay-2 animation-delay-2 ${inViewport}`}
+            className={`image-stack__item--three transition-config slide fade transition-delay-2 animation-delay-2 ${inViewport}`}
           />
         </div>
       </div>
