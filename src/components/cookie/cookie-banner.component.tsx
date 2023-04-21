@@ -61,7 +61,7 @@ export const CookieBanner = () => {
           style={{ cursor: "auto" }}
         >
           <span className="text-md mb-3 block  w-full font-serif leading-normal text-gray-800 sm:w-48">
-            We use cookies to provide a better user experience.
+            We gebruiken cookies om een betere gebruikerservaring te bieden.
           </span>
           <div className="flex items-center justify-between">
             <Link
@@ -76,7 +76,7 @@ export const CookieBanner = () => {
                 className="w-full rounded-lg bg-indigo-600  px-4 py-2 text-center font-serif text-base font-semibold text-white shadow-md transition duration-200 ease-in hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2  focus:ring-offset-indigo-200 "
                 onClick={handleClick}
               >
-                Accept
+                Aanvaarden
               </button>
             </div>
           </div>
