@@ -8,7 +8,7 @@ var fm = (function () {
           r = n ? n.innerHTML : "";
         t
           ? t.contentWindow.postMessage(r, "https://return.flexmail.eu")
-          : alert("Flexmail: Frame not found!");
+          : console.log("Flexmail: Frame not found!");
       }
     },
   };

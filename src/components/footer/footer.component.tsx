@@ -1,7 +1,6 @@
 "use client";
 
 import React, { ReactEventHandler, useEffect } from "react";
-import { Button } from "@/molecules/button/button.molecule";
 import { BottomBar } from "@/components/footer/bottom-bar.component";
 import Link from "next/link";
 import fm from "../../../public/flexmail";
@@ -63,6 +62,7 @@ export const Footer = (): JSX.Element => {
               onLoad={
                 fm.load() as ReactEventHandler<HTMLIFrameElement> | undefined
               }
+              frameBorder="0"
               src="https://return.flexmail.eu/page/opt-in-form/eyJ0eXAiOiJKV1QiLCJhbGciOiJFZERTQSJ9.eyJzdWIiOiJyZXR1cm4vb3B0LWluIiwiaWF0IjoxNjgxOTExNzM0LjIwNTAxNSwiYWlkIjo1NzQ5Niwib3B0ZnBrIjoiYWEyNjgzZTkwYzA4NDBjOGI5MTE0ZDExZTc1N2M3YzQxNTQxIn0.XsWRmcpkQYPGsnwek7jakzXV7aAtqt5JyfTh4R_McettamYSLR_wjADDxiUlyKGVvHhvjuyddlNs5qRlU0hvAg"
               style={{ overflow: "hidden", height: "195px", width: "100%" }}
               height="100%"

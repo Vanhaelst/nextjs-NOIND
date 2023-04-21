@@ -29,12 +29,12 @@ export default function Document() {
         <Script src="../../flexmail.js" />
         <style id="flx-styles">{`
                   
-          body {
+          .fm_body {
             background-color: transparent !important;
             color: white;
             overflow: hidden;
           }
-          
+         
           td {
             display: flex;
           }
