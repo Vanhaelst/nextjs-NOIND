@@ -1,10 +1,15 @@
-import React, { ReactEventHandler } from "react";
+"use client";
+
+import React, { ReactEventHandler, useEffect } from "react";
 import { Button } from "@/molecules/button/button.molecule";
 import { BottomBar } from "@/components/footer/bottom-bar.component";
 import Link from "next/link";
 import fm from "../../../public/flexmail";
 
 export const Footer = (): JSX.Element => {
+  useEffect(() => {
+    fm.load() as ReactEventHandler<HTMLIFrameElement> | undefined;
+  }, []);
   return (
     <>
       <footer className="bg-dark" id="footer">
@@ -48,6 +53,10 @@ export const Footer = (): JSX.Element => {
             </div>
           </div>
           <div className="">
+            <h3 className="font-serif font-bold text-white">
+              Schrijf je in op onze nieuwsbrief
+            </h3>
+
             <iframe
               name="iframe_flxml_form"
               id="iframe_flxml_form"
@@ -58,18 +67,7 @@ export const Footer = (): JSX.Element => {
               style={{ overflow: "hidden", height: "195px", width: "100%" }}
               height="100%"
               width="100%"
-            />
-
-            <h3 className="mb-5 font-serif font-bold text-white">
-              Schrijf je in op onze nieuwsbrief
-            </h3>
-            <input
-              placeholder="E-mail"
-              className="mb-5 mt-0 px-2 font-serif text-white"
-            />
-            <Button
-              cta="Inschrijven"
-              className="float-right w-full md:w-auto"
+              scrolling="no"
             />
           </div>
           <div className="block flex justify-center md:hidden">

@@ -6,7 +6,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title/>
+        <title />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -28,13 +28,32 @@ export default function Document() {
 
         <Script src="../../flexmail.js" />
         <style id="flx-styles">{`
-          #flxml_frm input[type="text"] {
-            width: 100%;
-            height: 50px;
-            margin-top: 24px;
-            border-radius: 6px;
-            background-color: #323232;
+                  
+          body {
+            background-color: transparent !important;
             color: white;
+            overflow: hidden;
+          }
+          
+          td {
+            display: flex;
+          }
+
+          #flxml_frm input {
+            height: 50px !important;
+            margin-top: 24px;
+            border-radius: 6px !important;
+            background-color: #323232;
+            color: white !important;
+            margin-top: 0;
+          }
+          #flxml_frm button {
+            padding: 13px 50px;
+            color: black;
+            background-color: white !important;
+            position: relative;
+            margin-bottom: 45px;
+            background-image: none;
           }
         `}</style>
       </Head>
