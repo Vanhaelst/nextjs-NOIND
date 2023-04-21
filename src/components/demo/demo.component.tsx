@@ -9,7 +9,7 @@ export const Demo = (): JSX.Element => {
       <div className="wrapper grid grid-cols-1 gap-4 md:grid-cols-2">
         <div>
           <h2 className="title mb-12 font-sans text-white">
-            Bezoek de digitale toonzaal
+            Bezoek onze digitale toonzaal
           </h2>
           <p className="mb-8 font-serif leading-7 text-white md:leading-10">
             Meer weten over NOIND? Breng een bezoek aan onze digitale toonzaal.

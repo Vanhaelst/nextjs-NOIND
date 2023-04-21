@@ -154,7 +154,7 @@ export const Navigation = (): JSX.Element => {
                   href={demo}
                   target="_blank"
                 >
-                  Bezoek de digitale toonzaal
+                  Bezoek onze digitale toonzaal
                 </a>
               </div>
             </div>
@@ -167,7 +167,7 @@ export const Navigation = (): JSX.Element => {
             href={demo}
             target="_blank"
         >
-          Bezoek de digitale toonzaal
+          Bezoek onze digitale toonzaal
         </a>
       </div>
     </>
