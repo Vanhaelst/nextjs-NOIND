@@ -36,7 +36,6 @@ export default function Home() {
       <main className={`${bebasNeue.variable} ${ibmPlexMono.variable} `}>
         <Navigation />
         <Banner title="NOIND ACADEMY" />
-        <Demo />
         <Intro
           paragraphs={academyIntro}
           cta="Ontmoet de founders"
@@ -44,6 +43,7 @@ export default function Home() {
         />
         <Founders />
         <AcademyImages />
+        <Demo />
         <Footer />
 
         <CookieBanner />
