@@ -57,9 +57,7 @@ export default function Document() {
           }
         `}</style>
       </Head>
-      <body style={{ overflow: "hidden", height: "100vh" }}>
-        <div className="overlay-black" id="go-live" />
-
+      <body>
         <Main />
         <NextScript />
       </body>
