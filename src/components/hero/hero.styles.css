@@ -62,7 +62,7 @@
 
 
 .hero {
-  height: 90vh;
+  height: 100vh;
 }
 @media screen and (min-width: 1024px) {
   .hero {

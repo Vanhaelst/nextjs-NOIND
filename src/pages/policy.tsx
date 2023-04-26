@@ -29,8 +29,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/*<div className="overlay-black" id="go-live"/>*/}
-
       <main className={`${bebasNeue.variable} ${ibmPlexMono.variable} `}>
         <Navigation />
         <Banner title="Policy" />
@@ -42,7 +40,7 @@ export default function Home() {
                 <h2 className="subtitle full mb-5 font-sans">{title}</h2>
                 {description?.map((text, index) => (
                   <p
-                    className="full mb-2 mb-20 font-serif leading-7 md:leading-10"
+                    className="full mb-2 mb-5 font-serif leading-7 md:leading-10"
                     key={index}
                   >
                     {text}

@@ -7,7 +7,9 @@ import fm from "../../../public/flexmail";
 
 export const Footer = (): JSX.Element => {
   useEffect(() => {
-    fm.load() as ReactEventHandler<HTMLIFrameElement> | undefined;
+    setTimeout(() => {
+      fm.load() as ReactEventHandler<HTMLIFrameElement> | undefined;
+    }, 2000);
   }, []);
   return (
     <>

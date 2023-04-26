@@ -24,14 +24,13 @@ export const Demo = (): JSX.Element => {
             Wees welkom in het NOIND Universe!
           </p>
           <p className="mb-8 font-serif text-xs leading-loose text-white">
-            <sup>*</sup>Hebt u geen VR-bril, maar wenst u toch contact? Neem
-            gerust contact op via{" "}
+            <sup>*</sup>Hebt u geen VR-bril, maar wenst u toch contact? Stuur een mailtje naar{" "}
             <a href="mailto:info@noind.be" className="hover:underline">
               info@noind.be
             </a>
             .
           </p>
-          <Link href={demo}>
+          <Link href={demo} target="_blank">
             <Button cta="Boek hier" />
           </Link>
         </div>

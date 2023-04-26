@@ -219,7 +219,7 @@ section.pb {
   left: 0;
   width: 100%;
   background-color: black;
-  z-index: 9999;
+  z-index: 99999;
 
   display: flex;
   justify-content: center;

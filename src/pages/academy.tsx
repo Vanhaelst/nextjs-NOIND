@@ -31,7 +31,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/*<div className="overlay-black" id="go-live"/>*/}
 
       <main className={`${bebasNeue.variable} ${ibmPlexMono.variable} `}>
         <Navigation />
