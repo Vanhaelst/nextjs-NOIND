@@ -19,6 +19,7 @@ const bebasNeue = Bebas_Neue({
   subsets: ["latin"],
   variable: "--font-bebas",
 });
+
 const ibmPlexMono = IBM_Plex_Mono({
   weight: ["400", "700"],
   subsets: ["latin"],
