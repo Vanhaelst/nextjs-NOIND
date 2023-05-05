@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
-const GOOGLE_ANALYTICS = "G-WHTXN3425C";
+const GOOGLE_ANALYTICS = process.env.environment === 'production' ? "G-WHTXN3425C" : "G-XXXXX";;
 const setCookies = () => {
   const googleTagManager = document.createElement("script");
   googleTagManager.type = "text/javascript";
