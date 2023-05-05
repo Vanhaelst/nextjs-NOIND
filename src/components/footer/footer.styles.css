@@ -28,7 +28,7 @@ input:active {
 
 .booking {
   position: fixed;
-  z-index: 10000;
+  z-index: 45;
   bottom: 0;
   width: 100%;
 }

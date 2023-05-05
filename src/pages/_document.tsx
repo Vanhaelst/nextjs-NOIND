@@ -58,7 +58,10 @@ export default function Document() {
         `}</style>
       </Head>
       <body>
-        <Main />
+      { process.env.environment === 'production'
+          ? <div className="overlay-black" id="go-live"/>
+          : <Main />
+      }
         <NextScript />
       </body>
 
