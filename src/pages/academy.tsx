@@ -25,13 +25,9 @@ export default function Home() {
         <title>NOIND - Academy</title>
         <meta
           name="description"
-          content="A novel way to express what we never thought we were able to express."
+          content="Om bij te dragen aan deze technologische evolutie, is er diepgaand onderzoek nodig naar sociaal-maatschappelijke vraagstukken over die digitale transitie. Onze academy is een kennis laboratorium ter ondersteuning van fundamentele vernieuwing. "
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
-
-
       <main className={`${bebasNeue.variable} ${ibmPlexMono.variable} `}>
         <Navigation />
         <Banner title="NOIND ACADEMY" />

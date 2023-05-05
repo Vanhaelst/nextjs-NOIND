@@ -33,10 +33,8 @@ export default function Home() {
         <title>NOIND</title>
         <meta
           name="description"
-          content="A novel way to express what we never thought we were able to express."
+          content="NOIND is een virtueel ontwerp- en productieplatform en de centrale spil in een netwerk van ruimtelijke ontwerpers. NOIND verbindt ruimtelijk ontwerp met digitale productie, dat samenspel vertaalt zich in holografische productie."
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={`${bebasNeue.variable} ${ibmPlexMono.variable} `}>
@@ -53,7 +51,6 @@ export default function Home() {
         <Video />
         <Evaluate />
         <Footer />
-
         <CookieBanner />
       </main>
     </>

@@ -6,7 +6,27 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title />
+          <meta charSet="UTF-8" />
+          <meta name="robots" content={process.env.META_ROBOTS} />
+          <title>NOIND - Life changing interiors</title>
+          <meta
+              name="keywords"
+              content="keuken, badkamer, totaalinterieur, Kletz, trends, inspiratie, creativiteit, ontwerpen, douche, bad, huis, interieur, stijl, welzijnsindex, modulariteit, toekomstgericht, visueliserren, tips"
+          />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta property="og:title" content="Kletz - Life changing interiors" />
+          <meta property="og:type" content="page" />
+          <meta property="og:url" content="http://www.kletz.be/" />
+          <meta
+              property="og:image"
+              content="/images/kletz-share.png"
+          />
+          <meta
+              property="og:description"
+              content="Op zoek naar keuken, badkamer of totaalinterieur van je dromen? Er is maar 1 adres, Kletz! Wij helpen met ontwerpen tot realiseren. Een ruimte waar gebruiksgemak en trends worden samen gevoegd tot de wonderkamer waarvan u niet wist dat ze bestond."
+          />
+          <meta property="og:site_name" content="Pergo-Lux" />
+          <meta property="fb:admins" content="Facebook numberic ID" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
