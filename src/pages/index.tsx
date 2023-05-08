@@ -36,7 +36,6 @@ export default function Home() {
           content="NOIND is een virtueel ontwerp- en productieplatform en de centrale spil in een netwerk van ruimtelijke ontwerpers. NOIND verbindt ruimtelijk ontwerp met digitale productie, dat samenspel vertaalt zich in holografische productie."
         />
       </Head>
-
       <main className={`${bebasNeue.variable} ${ibmPlexMono.variable} `}>
         <Navigation />
         <Hero />
