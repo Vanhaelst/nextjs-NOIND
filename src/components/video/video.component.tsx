@@ -10,7 +10,7 @@ export const Video = () => {
           className="video-react"
         >
           <iframe
-            src="https://player.vimeo.com/video/821200596?h=ab6adab836"
+            src="https://player.vimeo.com/video/821200596?h=ab6adab836&title=0&byline=0&portrait=0&sidedock=0"
             allow="autoplay; fullscreen; picture-in-picture"
             allowFullScreen
             style={{
