@@ -78,12 +78,8 @@ export default function Document() {
         `}</style>
       </Head>
       <body>
-      { process.env.environment === 'production'
-          ? <div className="overlay-black" id="go-live"/>
-          : <Main />
-      }
+      <Main />
         <NextScript />
-
       </body>
 
       <script src="https://player.vimeo.com/api/player.js" async></script>
