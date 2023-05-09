@@ -11,22 +11,22 @@ export default function Document() {
           <title>NOIND - Life changing interiors</title>
           <meta
               name="keywords"
-              content="keuken, badkamer, totaalinterieur, Kletz, trends, inspiratie, creativiteit, ontwerpen, douche, bad, huis, interieur, stijl, welzijnsindex, modulariteit, toekomstgericht, visueliserren, tips"
+              content="virtueel, digitale productie, creatieve denkers, beeldend, virtuele realiteit, technologische evolutie, holografisch ontwerp, academy"
           />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta property="og:title" content="Kletz - Life changing interiors" />
+          <meta property="og:title" content="NOIND" />
           <meta property="og:type" content="page" />
-          <meta property="og:url" content="http://www.kletz.be/" />
+          <meta property="og:url" content="http://www.noind.be/" />
           <meta
               property="og:image"
-              content="/images/kletz-share.png"
+              content="http://www.noind.be/noind-share.png"
           />
           <meta
               property="og:description"
-              content="Op zoek naar keuken, badkamer of totaalinterieur van je dromen? Er is maar 1 adres, Kletz! Wij helpen met ontwerpen tot realiseren. Een ruimte waar gebruiksgemak en trends worden samen gevoegd tot de wonderkamer waarvan u niet wist dat ze bestond."
+              content="NOIND is een virtueel ontwerp- en productieplatform en de centrale spil in een netwerk van ruimtelijke ontwerpers. NOIND verbindt ruimtelijk ontwerp met digitale productie, dat samenspel vertaalt zich in holografische productie"
           />
-          <meta property="og:site_name" content="Pergo-Lux" />
-          <meta property="fb:admins" content="Facebook numberic ID" />
+          <meta property="og:site_name" content="NOIND" />
+          {/*<meta property="fb:admins" content="Facebook numberic ID" />*/}
         <link
           rel="apple-touch-icon"
           sizes="180x180"
