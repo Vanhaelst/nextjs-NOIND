@@ -72,7 +72,6 @@ export default function Document() {
             color: black;
             background-color: white !important;
             position: relative;
-            margin-bottom: 45px;
             background-image: none;
           }
         `}</style>

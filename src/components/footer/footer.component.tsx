@@ -66,7 +66,7 @@ export const Footer = (): JSX.Element => {
               }
               frameBorder="0"
               src="https://return.flexmail.eu/page/opt-in-form/eyJ0eXAiOiJKV1QiLCJhbGciOiJFZERTQSJ9.eyJzdWIiOiJyZXR1cm4vb3B0LWluIiwiaWF0IjoxNjgxOTExNzM0LjIwNTAxNSwiYWlkIjo1NzQ5Niwib3B0ZnBrIjoiYWEyNjgzZTkwYzA4NDBjOGI5MTE0ZDExZTc1N2M3YzQxNTQxIn0.XsWRmcpkQYPGsnwek7jakzXV7aAtqt5JyfTh4R_McettamYSLR_wjADDxiUlyKGVvHhvjuyddlNs5qRlU0hvAg"
-              style={{ overflow: "hidden", height: "195px", width: "100%" }}
+              style={{ overflow: "hidden", height: "210px", width: "100%" }}
               height="100%"
               width="100%"
               scrolling="no"
