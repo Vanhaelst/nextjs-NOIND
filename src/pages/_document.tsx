@@ -77,8 +77,13 @@ export default function Document() {
         `}</style>
       </Head>
       <body>
-      <Main />
-        <NextScript />
+          <Main />
+          <NextScript />
+          <noscript
+              dangerouslySetInnerHTML={{
+                  __html: `<iframe src=https://www.googletagmanager.com/ns.html?id=GTM-M2KZZ5M" height="0" width="0" style="display: none; visibility: hidden;" />`,
+              }}
+          />
       </body>
 
       <script src="https://player.vimeo.com/api/player.js" async></script>
