@@ -214,18 +214,27 @@ section.pb {
 
 .cookie-policy {
   position: fixed;
-  bottom: 20px;
+  bottom: 0;
   right: -500px;
   z-index: 10000;
-  border-radius: 24px;
+  border-radius: 24px 24px 0 0;
   overflow: hidden;
   opacity: 0;
 }
+@media screen and (min-width: 768px){
+  .cookie-policy {
+    bottom: 20px;
+    border-radius: 24px;
+  }
+}
 
 .cookie-policy.show {
-  right: 20px;
+  right: 0;
   opacity: 1;
   transition: opacity 0.25s;
 }
-
-
+@media screen and (min-width: 768px){
+  .cookie-policy.show {
+    right: 20px;
+  }
+}
