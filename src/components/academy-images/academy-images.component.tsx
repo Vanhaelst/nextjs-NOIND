@@ -14,24 +14,19 @@ export const AcademyImages = (): JSX.Element => {
         <div className="image-stack">
           <img
             ref={ref}
-            src="/images/image-1.png"
+            src="/images/academy-2-portrait.jpg"
             alt="image"
             className={`image-stack__item--one transition-config slide fade ${inViewport} transition-delay-1`}
           />
           <img
-            src="/images/image-2.png"
+            src="/images/academy-1.jpg"
             alt="image"
             className={`image-stack__item--two transition-config slide fade ${inViewport} animation-delay-1`}
           />
           <img
-            src="/images/image-3.png"
+            src="/images/academy-3.jpg"
             alt="image"
             className={`image-stack__item--three transition-config slide fade ${inViewport} animation-delay-2 transition-delay-2`}
-          />
-          <img
-            src="/images/image-3.png"
-            alt="image"
-            className={`image-stack__item--four transition-config slide fade ${inViewport} animation-delay-2 transition-delay-2 hidden`}
           />
         </div>
       </div>

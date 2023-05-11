@@ -14,17 +14,17 @@ export const Images = (): JSX.Element => {
         <div className="image-stack">
           <img
             ref={ref}
-            src="/images/evaluate.jpeg"
+            src="/images/visie-1-portrait.jpg"
             alt="image"
             className={`image-stack__item--one transition-config slide fade animation-delay-1 ${inViewport}`}
           />
           <img
-            src="/images/5.jpg"
+            src="/images/visie-2.jpg"
             alt="image"
             className={`image-stack__item--two transition-config slide fade transition-delay-1 ${inViewport}`}
           />
           <img
-            src="/images/7.jpg"
+            src="/images/visie-3.jpg"
             alt="image"
             className={`image-stack__item--three transition-config slide fade transition-delay-2 animation-delay-2 ${inViewport}`}
           />
