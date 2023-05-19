@@ -4,6 +4,7 @@ import React, { ReactEventHandler, useEffect } from "react";
 import { BottomBar } from "@/components/footer/bottom-bar.component";
 import Link from "next/link";
 import fm from "../../../public/flexmail";
+import { gtmVirtualPageView } from "@/utils/gtmVirtualPageView";
 
 export const Footer = (): JSX.Element => {
   useEffect(() => {
@@ -24,12 +25,25 @@ export const Footer = (): JSX.Element => {
               </p>
               <h3 className="mt-4 font-serif text-white">
                 <span className="font-bold">E-mail:</span>{" "}
-                <Link href="mailto:info@noind.be">info@noind.be</Link>
+                <Link
+                  href="mailto:info@noind.be"
+                  onClick={() =>
+                    gtmVirtualPageView("link_click", "footer_mail")
+                  }
+                >
+                  info@noind.be
+                </Link>
               </h3>
             </div>
             <div className="self-end" />
             <div className="mt-5 hidden md:flex">
-              <Link href="https://www.facebook.com/NOIND.be" target="_blank">
+              <Link
+                href="https://www.facebook.com/NOIND.be"
+                target="_blank"
+                onClick={() =>
+                  gtmVirtualPageView("button_click", "footer_facebook")
+                }
+              >
                 <img
                   src="/images/facebook.svg"
                   alt="facebook"
@@ -37,7 +51,13 @@ export const Footer = (): JSX.Element => {
                   width={24}
                 />
               </Link>
-              <Link href="https://www.instagram.com/noind.be/" target="_blank">
+              <Link
+                href="https://www.instagram.com/noind.be/"
+                target="_blank"
+                onClick={() =>
+                  gtmVirtualPageView("button_click", "footer_instagram")
+                }
+              >
                 <img
                   src="/images/instagram.svg"
                   alt="instagram"
@@ -48,6 +68,9 @@ export const Footer = (): JSX.Element => {
               <Link
                 href="https://www.linkedin.com/company/noind/"
                 target="_blank"
+                onClick={() =>
+                  gtmVirtualPageView("button_click", "footer_linkedin")
+                }
               >
                 <img src="/images/linkedin.svg" alt="linkedin" width={24} />
               </Link>

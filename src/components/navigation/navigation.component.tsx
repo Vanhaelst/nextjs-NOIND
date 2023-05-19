@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { demo, navigation } from "./navigation.data";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import {gtmVirtualPageView} from "@/utils/gtmVirtualPageView";
 
 export const Navigation = (): JSX.Element => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -166,6 +167,7 @@ export const Navigation = (): JSX.Element => {
             className="text-md floatSmall block bg-orange-400 px-6 py-2 md:px-10 md:py-4 text-center font-serif text-sm text-white transition hover:bg-orange-500 lg:inline-block md:rounded-xl"
             href={demo}
             target="_blank"
+            onClick={() => gtmVirtualPageView("button_click", "digitale_showroom")}
         >
           Bezoek onze digitale toonzaal
         </a>

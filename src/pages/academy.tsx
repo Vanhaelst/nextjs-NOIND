@@ -4,8 +4,10 @@ import { Bebas_Neue, IBM_Plex_Mono } from "next/font/google";
 import { academyIntro } from "@/data/academy-intro";
 import { Founders } from "@/components/founders/founders.component";
 import { AcademyImages } from "@/components/academy-images/academy-images.component";
-import React from "react";
+import React, {useEffect} from "react";
 import { CookieBanner } from "@/components/cookie/cookie-banner.component";
+import {useRouter} from "next/router";
+import {gtmVirtualPageView} from "@/utils/gtmVirtualPageView";
 
 const bebasNeue = Bebas_Neue({
   weight: "400",
@@ -19,6 +21,16 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export default function Home() {
+  const { pathname } = useRouter();
+
+  useEffect(() => {
+    const mainDataLayer = {
+      url: pathname,
+    };
+
+    gtmVirtualPageView("VirtualPageView", mainDataLayer);
+  }, [pathname]);
+
   return (
     <>
       <Head>
