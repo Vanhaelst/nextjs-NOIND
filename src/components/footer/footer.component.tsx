@@ -27,9 +27,7 @@ export const Footer = (): JSX.Element => {
                 <span className="font-bold">E-mail:</span>{" "}
                 <Link
                   href="mailto:info@noind.be"
-                  onClick={() =>
-                    gtmVirtualPageView("link_click", "footer_mail")
-                  }
+                  onClick={() => gtmVirtualPageView("footer_mail", "")}
                 >
                   info@noind.be
                 </Link>
@@ -40,9 +38,7 @@ export const Footer = (): JSX.Element => {
               <Link
                 href="https://www.facebook.com/NOIND.be"
                 target="_blank"
-                onClick={() =>
-                  gtmVirtualPageView("button_click", "footer_facebook")
-                }
+                onClick={() => gtmVirtualPageView("footer_facebook", "")}
               >
                 <img
                   src="/images/facebook.svg"
@@ -54,9 +50,7 @@ export const Footer = (): JSX.Element => {
               <Link
                 href="https://www.instagram.com/noind.be/"
                 target="_blank"
-                onClick={() =>
-                  gtmVirtualPageView("button_click", "footer_instagram")
-                }
+                onClick={() => gtmVirtualPageView("footer_instagram", "")}
               >
                 <img
                   src="/images/instagram.svg"
@@ -68,9 +62,7 @@ export const Footer = (): JSX.Element => {
               <Link
                 href="https://www.linkedin.com/company/noind/"
                 target="_blank"
-                onClick={() =>
-                  gtmVirtualPageView("button_click", "footer_linkedin")
-                }
+                onClick={() => gtmVirtualPageView("footer_linkedin", "")}
               >
                 <img src="/images/linkedin.svg" alt="linkedin" width={24} />
               </Link>

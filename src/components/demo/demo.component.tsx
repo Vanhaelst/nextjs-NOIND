@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "@/molecules/button/button.molecule";
 import Link from "next/link";
 import { demo } from "@/components/navigation/navigation.data";
-import {gtmVirtualPageView} from "@/utils/gtmVirtualPageView";
+import { gtmVirtualPageView } from "@/utils/gtmVirtualPageView";
 
 export const Demo = (): JSX.Element => {
   return (
@@ -25,13 +25,18 @@ export const Demo = (): JSX.Element => {
             Wees welkom in het NOIND Universe!
           </p>
           <p className="mb-8 font-serif text-xs leading-loose text-white">
-            <sup>*</sup>Hebt u geen VR-bril, maar wenst u toch contact? Stuur een mailtje naar{" "}
+            <sup>*</sup>Hebt u geen VR-bril, maar wenst u toch contact? Stuur
+            een mailtje naar{" "}
             <a href="mailto:info@noind.be" className="hover:underline">
               info@noind.be
             </a>
             .
           </p>
-          <Link href={demo} target="_blank" onClick={() => gtmVirtualPageView("button_click", "demo_book")}>
+          <Link
+            href={demo}
+            target="_blank"
+            onClick={() => gtmVirtualPageView("demo_book", "")}
+          >
             <Button cta="Boek hier" />
           </Link>
         </div>

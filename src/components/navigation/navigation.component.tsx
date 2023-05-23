@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { demo, navigation } from "./navigation.data";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {gtmVirtualPageView} from "@/utils/gtmVirtualPageView";
+import { gtmVirtualPageView } from "@/utils/gtmVirtualPageView";
 
 export const Navigation = (): JSX.Element => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -53,7 +53,7 @@ export const Navigation = (): JSX.Element => {
                   return (
                     <li key={label}>
                       <a
-                        className="text-md font-serif text-violet-900 hover:text-violet-500 mr-8"
+                        className="text-md mr-8 font-serif text-violet-900 hover:text-violet-500"
                         href={href}
                       >
                         {label}
@@ -64,7 +64,7 @@ export const Navigation = (): JSX.Element => {
                 return (
                   <li key={label}>
                     <Link
-                      className="text-md font-serif text-violet-900 hover:text-violet-500 mr-8"
+                      className="text-md mr-8 font-serif text-violet-900 hover:text-violet-500"
                       href={`/${href}`}
                     >
                       {label}
@@ -164,10 +164,10 @@ export const Navigation = (): JSX.Element => {
       </div>
       <div className="booking">
         <a
-            className="text-md floatSmall block bg-orange-400 px-6 py-2 md:px-10 md:py-4 text-center font-serif text-sm text-white transition hover:bg-orange-500 lg:inline-block md:rounded-xl"
-            href={demo}
-            target="_blank"
-            onClick={() => gtmVirtualPageView("button_click", "digitale_showroom")}
+          className="text-md floatSmall block bg-orange-400 px-6 py-2 text-center font-serif text-sm text-white transition hover:bg-orange-500 md:rounded-xl md:px-10 md:py-4 lg:inline-block"
+          href={demo}
+          target="_blank"
+          onClick={() => gtmVirtualPageView("digitale_showroom", "")}
         >
           Bezoek onze digitale toonzaal
         </a>
