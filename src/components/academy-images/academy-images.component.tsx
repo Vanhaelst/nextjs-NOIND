@@ -7,7 +7,7 @@ export const AcademyImages = (): JSX.Element => {
   const inViewport = enterCount > 0 ? "inViewport" : "";
 
   return (
-    <section className="bg-gray-100 academy">
+    <section className="bg-gray-100 academy md:pt-20 lg:pt-0 ">
       <div className="upper bg-gray-100" />
 
       <div className="wrapper-xl pb-20">
