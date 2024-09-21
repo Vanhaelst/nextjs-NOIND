@@ -16,7 +16,7 @@ export const navigation: navData[] = [
     type: "link",
   },
   {
-    label: "Academy",
+    label: "Academy en team",
     href: "academy",
     type: "link",
   },

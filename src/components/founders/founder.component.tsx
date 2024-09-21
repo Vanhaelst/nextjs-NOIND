@@ -4,11 +4,17 @@ interface founderProps {
   avatar: string;
   name: string;
   description: string;
+  classnames?: string;
 }
 
-export const Founder = ({ avatar, name, description }: founderProps) => {
+export const Founder = ({
+  avatar,
+  name,
+  description,
+  classnames,
+}: founderProps) => {
   return (
-    <div className="founder">
+    <div className={`founder ${classnames}`}>
       <div className="intro">
         <img src={avatar} alt={name} />
         <h3 className="title mb-12 font-sans name ml-6">{name}</h3>
