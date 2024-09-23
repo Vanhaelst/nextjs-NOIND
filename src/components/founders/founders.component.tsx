@@ -7,7 +7,9 @@ export const Founders = () => {
     <section className="demo pt pb founders bg-gray-100" id="founders">
       <div className="wrapper grid grid-cols-1 gap-6 md:grid-cols-2">
         <div>
-          <h2 className="title mb-12 font-sans">Ontmoet de founders</h2>
+          <h2 className="title mb-12 font-sans">
+            Ontmoet de founders en het team
+          </h2>
           <p className="text-md intro mb-8 font-serif leading-7 md:leading-10">
             Het Academy netwerk zal opgebouwd en geleid worden door
             NOIND-founders Mario Fleurinck en Maud Mertens.
