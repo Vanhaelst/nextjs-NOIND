@@ -55,7 +55,7 @@ export default function Home() {
         <Demo />
         <Intro
           paragraphs={homeIntro}
-          cta="Ontdek onze academy"
+          cta="Ontdek onze academy en team"
           href="/academy"
           images
         />
