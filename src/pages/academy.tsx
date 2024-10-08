@@ -8,6 +8,7 @@ import React, { useEffect } from "react";
 import { CookieBanner } from "@/components/cookie/cookie-banner.component";
 import { useRouter } from "next/router";
 import { gtmVirtualPageView } from "@/utils/gtmVirtualPageView";
+import Popup from "@/molecules/event-popup/event-popup.component";
 
 const bebasNeue = Bebas_Neue({
   weight: "400",
@@ -51,6 +52,7 @@ export default function Home() {
         <Founders />
         <AcademyImages />
         <Demo />
+        <Popup />
         <Footer />
 
         <CookieBanner />

@@ -15,6 +15,7 @@ import React, { useEffect } from "react";
 import { CookieBanner } from "@/components/cookie/cookie-banner.component";
 import { gtmVirtualPageView } from "@/utils/gtmVirtualPageView";
 import { useRouter } from "next/router";
+import Popup from "@/molecules/event-popup/event-popup.component";
 
 const bebasNeue = Bebas_Neue({
   weight: "400",
@@ -53,6 +54,8 @@ export default function Home() {
         <Navigation />
         <Hero />
         <Demo />
+        <Popup />
+
         <Intro
           paragraphs={homeIntro}
           cta="Ontdek onze academy en team"
