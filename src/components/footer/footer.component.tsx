@@ -1,17 +1,47 @@
 "use client";
 
-import React, { ReactEventHandler, useEffect } from "react";
+import React, { useState } from "react";
 import { BottomBar } from "@/components/footer/bottom-bar.component";
 import Link from "next/link";
-import fm from "../../../public/flexmail";
+import { useForm } from "react-hook-form";
 import { gtmVirtualPageView } from "@/utils/gtmVirtualPageView";
+import createBrevoContact from "@/utils/createBrevoContact";
+import { Button } from "@/molecules/button/button.molecule";
 
 export const Footer = (): JSX.Element => {
-  useEffect(() => {
-    setTimeout(() => {
-      fm.load() as ReactEventHandler<HTMLIFrameElement> | undefined;
-    }, 2000);
-  }, []);
+  const [isSending, setIsSending] = useState(false);
+  const [errors, setErrors] = useState(false);
+
+  const onSubmit = (data: any) => {
+    setErrors(false);
+    setIsSending(true);
+
+    const mailformat = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
+    const isEmailValid = !!data.email.match(mailformat);
+
+    if (!data.email || !isEmailValid) {
+      setErrors(true);
+      setIsSending(false);
+    } else {
+      setIsSending(false);
+      createBrevoContact({
+        data: data,
+        onError: (e: any) => {
+          console.error("error", e);
+        },
+        onSuccess: () => {
+          reset();
+          setErrors(false);
+          setIsSending(false);
+        },
+      }).catch((e) => {
+        console.error("error", e);
+      });
+    }
+  };
+
+  const { register, handleSubmit, reset } = useForm();
+
   return (
     <>
       <footer className="bg-dark" id="footer">
@@ -73,21 +103,32 @@ export const Footer = (): JSX.Element => {
               Schrijf je in op onze nieuwsbrief
             </h3>
 
-            <iframe
-              name="iframe_flxml_form"
-              id="iframe_flxml_form"
-              onLoad={
-                fm.load() as ReactEventHandler<HTMLIFrameElement> | undefined
-              }
-              frameBorder="0"
-              src="https://return.flexmail.eu/page/opt-in-form/eyJ0eXAiOiJKV1QiLCJhbGciOiJFZERTQSJ9.eyJzdWIiOiJyZXR1cm4vb3B0LWluIiwiaWF0IjoxNjgxOTExNzM0LjIwNTAxNSwiYWlkIjo1NzQ5Niwib3B0ZnBrIjoiYWEyNjgzZTkwYzA4NDBjOGI5MTE0ZDExZTc1N2M3YzQxNTQxIn0.XsWRmcpkQYPGsnwek7jakzXV7aAtqt5JyfTh4R_McettamYSLR_wjADDxiUlyKGVvHhvjuyddlNs5qRlU0hvAg"
-              style={{ overflow: "hidden", height: "210px", width: "100%" }}
-              height="100%"
-              width="100%"
-              scrolling="no"
-            />
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              className="flex flex-col items-end space-y-6"
+            >
+              <input
+                type="email"
+                placeholder="E-mailadres *"
+                defaultValue=""
+                className={`w-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 md:col-span-12 px-2 font-serif ${
+                  errors && `border-2 border-red-700`
+                }`}
+                {...register("email")}
+              />
+
+              <Button
+                cta="Verzenden"
+                disabled={isSending}
+                className={
+                  isSending
+                    ? "w-fit cursor-not-allowed bg-gray-500 text-white"
+                    : "w-fit hover:bg-gray-200"
+                }
+              />
+            </form>
           </div>
-          <div className="block flex justify-center md:hidden">
+          <div className="flex justify-center md:hidden">
             <Link href="https://www.facebook.com/NOIND.be" target="_blank">
               <img
                 src="/images/facebook.svg"
