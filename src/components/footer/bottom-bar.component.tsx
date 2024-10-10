@@ -22,8 +22,12 @@ export const BottomBar = () => {
             Privacy and cookie policy
           </Link>{" "}
           - Made by{" "}
-          <a href="http://www.pixell.be" target="_blank" className="hover:underline">
-            Pixell
+          <a
+            href="http://www.publiplus.be"
+            target="_blank"
+            className="hover:underline"
+          >
+            Publiplus
           </a>
         </p>
       </div>
