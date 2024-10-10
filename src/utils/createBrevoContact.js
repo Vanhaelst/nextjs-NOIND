@@ -17,6 +17,8 @@ export const createBrevoContact = ({ onSuccess, onError, data = {} }) =>
       emailBlacklisted: false,
       smsBlacklisted: false,
       includeListIds: [7],
+      templateId: 3,
+      redirectionUrl: "https://www.noind.be/",
       updateEnabled: true,
     },
     onSuccess: (response) => {
