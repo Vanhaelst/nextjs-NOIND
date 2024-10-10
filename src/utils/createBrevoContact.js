@@ -16,7 +16,7 @@ export const createBrevoContact = ({ onSuccess, onError, data = {} }) =>
       },
       emailBlacklisted: false,
       smsBlacklisted: false,
-      listIds: [7],
+      includeListIds: [7],
       updateEnabled: true,
     },
     onSuccess: (response) => {
