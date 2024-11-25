@@ -54,7 +54,7 @@ export default function Home() {
         <Navigation />
         <Hero />
         <Demo />
-        <Popup />
+        {/* <Popup /> */}
 
         <Intro
           paragraphs={homeIntro}
