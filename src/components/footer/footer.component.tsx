@@ -151,6 +151,12 @@ export const Footer = (): JSX.Element => {
             >
               <img src="/images/linkedin.svg" alt="linkedin" width={24} />
             </Link>
+            <Link
+              href="https://www.pinterest.com/Noindinterieurdesign/"
+              target="_blank"
+            >
+              <img src="/images/pinterest.svg" alt="linkedin" width={24} />
+            </Link>
           </div>
         </div>
       </footer>
