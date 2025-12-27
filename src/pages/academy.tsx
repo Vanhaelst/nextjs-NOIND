@@ -52,7 +52,7 @@ export default function Home() {
         <Founders />
         <AcademyImages />
         <Demo />
-        <Popup />
+        {/* <Popup /> */}
         <Footer />
 
         <CookieBanner />
