@@ -12,14 +12,14 @@ export default async function sendNewsletterContact(req, res) {
             email: data.email,
             attributes: {
                 LASTNAME: data.name,
-                OPT_IN_KLETZ: true,
+                OPT_IN_NOIND: true,
                 COUNTRIES: ["Belgium"],
             },
             emailBlacklisted: false,
             smsBlacklisted: false,
             includeListIds: [7],
             templateId: 3,
-            redirectionUrl: "https://www.kletz.be/",
+            redirectionUrl: "https://www.noind.be/",
             updateEnabled: true,
         }),
     })
