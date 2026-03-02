@@ -1,3 +1,5 @@
+/* @ts-ignore */
+
 "use client";
 
 import React, { useState } from "react";
@@ -5,8 +7,18 @@ import { BottomBar } from "@/components/footer/bottom-bar.component";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { gtmVirtualPageView } from "@/utils/gtmVirtualPageView";
-import createBrevoContact from "@/utils/createBrevoContact";
 import { Button } from "@/molecules/button/button.molecule";
+
+export const sendNewsletterContact = async (obj: Record<any, any>) => {
+  const result = await fetch("/api/newsletter", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(obj),
+  });
+  return result.json();
+};
 
 export const Footer = (): JSX.Element => {
   const [isSending, setIsSending] = useState(false);
@@ -24,16 +36,12 @@ export const Footer = (): JSX.Element => {
       setIsSending(false);
     } else {
       setIsSending(false);
-      createBrevoContact({
+      sendNewsletterContact({
         data: data,
-        onError: (e: any) => {
-          console.error("error", e);
-        },
-        onSuccess: () => {
-          reset();
-          setErrors(false);
-          setIsSending(false);
-        },
+      }).then(() => {
+        reset();
+        setErrors(false);
+        setIsSending(false);
       }).catch((e) => {
         console.error("error", e);
       });
